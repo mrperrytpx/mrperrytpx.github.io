@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-screen" lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,11 +8,103 @@
     <script src="index.js" defer></script>
     <title>PF</title>
   </head>
-  <body class="h-screen transition-colors duration-1000">
-    <div id="wrapper" class="overflow-y-auto h-screen snap-y snap-mandatory">
-      <section data-bg="bg-gray-800" class="h-screen snap-center border-b transition-all border-slate-500 w-full"></section>
-      <section data-bg="bg-zinc-950" class="h-screen snap-center border-b transition-all border-slate-500 w-full"></section>
-      <section data-bg="bg-[#06101e]" class="h-screen snap-center transition-all border-slate-500 last-of-type:border-0 w-full"></section>
-    </div>
+  <body class="h-full text-gray-200 bg-gray-800 transition-colors duration-500">
+    <main id="wrapper" class="overflow-y-auto h-full snap-y snap-mandatory">
+      <!--  -->
+      <!-- <section
+        data-bg="bg-gray-800"
+        class="relative min-h-full flex flex-col items-center justify-center snap-center border-b border-slate-500 w-full"
+      >
+        <div id="middle" class="mb-20 rounded-lg bg-gray-900 flex flex-col items-center py-4 px-8 gap-4">
+          <div class="w-[200px] h-[200px]">
+            <img class="w-full" loading="eager" src="../public/laptop-coding.svg" alt="Laptop SVG" />
+          </div>
+          <div class="text-center">
+            <h1 class="text-4xl"><strong>Tomislav Šiprak</strong></h1>
+            <h3 class="text-lg">Junior Web Developer</h3>
+          </div>
+          <div class="flex gap-4 mt-2 items-center justify-evenly w-full">
+            <a
+              href="https://www.github.com/mrperrytpx"
+              target="_blank"
+              rel="no-referrer"
+              class="group hover:scale-110 hover:outline hover:outline-2 hover:outline-slate-200 transition-transform appearance-none rounded-lg h-10 w-10"
+            >
+              <img class="w-full" loading="eager" src="../public/github.svg" alt="Github SVG" />
+            </a>
+          </div>
+        </div>
+        <div id="line" class="absolute bottom-0 w-0.5 opacity-75 h-1/4 bg-slate-500"></div>
+      </section> -->
+
+      <section data-bg="bg-zinc-950" class="min-h-full p-4 snap-center border-b border-slate-500">
+        <div class="flex flex-col w-full max-w-screen-2xl 2xl:mx-auto mt-6 lg:mt-20 lg:flex-row lg:items-start lg:justify-evenly items-center gap-8">
+          <a
+            href="https://garbgarb.vercel.app"
+            target="_blank"
+            rel="no-referrer"
+            class="w-[min(500px,100%)] max-w-[500px] flex-1 appearance-none hover:scale-105 transition-all outline outline-1 shadow-md shadow-slate-500 rounded-lg outline-slate-500 hover:outline-slate-200"
+          >
+            <picture class="block w-full aspect-video">
+              <img class="w-full rounded-lg" src="../public/garbgarb.webp" alt="Garbgarb website" />
+            </picture>
+          </a>
+          <aside class="flex-1 max-w-screen-sm flex flex-col gap-8">
+            <a
+              href="https://garbgarb.vercel.app"
+              target="_blank"
+              rel="no-referrer"
+              role="heading"
+              aria-level="2"
+              class="appearance-none text-2xl inline-block hover:underline w-full focus:underline"
+              >GarbGarb clothing</a
+            >
+            <div class="flex flex-col gap-2">
+              <p>
+                An e-commerce store specializing in unique t-shirts, sweatshirts, and hoodies with "whacky" sayings on the front that I've seen on the
+                internet.
+              </p>
+              <p>Full-stack web application built using the Next.js framework as the backbone.</p>
+            </div>
+            <h2 class="text-xl">Technoligies used:</h2>
+            <div class="flex w-full gap-6 flex-wrap">
+              <div class="w-10 h-10">
+                <img class="w-full aspect-square object-fill" src="../public/garbgarb/nextjs.svg" alt="NextJS SVG" />
+              </div>
+              <div class="w-10 h-10">
+                <img class="w-full aspect-square object-fill" src="../public/garbgarb/typescript.svg" alt="Typescript SVG" />
+              </div>
+              <div class="w-10 h-10">
+                <img class="w-full aspect-square object-fill" src="../public/garbgarb/tailwind.svg" alt="Tailwind SVG" />
+              </div>
+              <div class="w-10 h-10">
+                <img class="w-full aspect-square object-fill" src="../public/garbgarb/nextauth.webp" alt="Nextauth WEBP" />
+              </div>
+              <div class="w-10 h-10">
+                <img class="w-full aspect-square object-fill" src="../public/garbgarb/redux.svg" alt="Redux SVG" />
+              </div>
+              <div class="w-10 h-10">
+                <img class="w-full aspect-square object-fill" src="../public/garbgarb/react-query.svg" alt="Redux SVG" />
+              </div>
+              <div class="w-10 h-10">
+                <img class="w-full aspect-square object-fill" src="../public/garbgarb/prisma.svg" alt="Prisma SVG" />
+              </div>
+              <div class="w-10 h-10">
+                <img class="w-full aspect-square object-fill" src="../public/garbgarb/stripe.svg" alt="Stripe SVH" />
+              </div>
+            </div>
+            <a
+              href="https://garbgarb.vercel.app"
+              target="_blank"
+              rel="no-referrer"
+              class="appearance-none inline-block hover:underline w-full focus:underline"
+              >https://garbgarb.vercel.app</a
+            >
+          </aside>
+        </div>
+      </section>
+      <!--  -->
+      <section data-bg="bg-[#06101e]" class="min-h-full snap-center border-slate-500 last-of-type:border-0 w-full"></section>
+    </main>
   </body>
 </html>
