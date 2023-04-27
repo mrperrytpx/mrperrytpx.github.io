@@ -2,7 +2,7 @@ const sections = document.querySelectorAll("section");
 
 const options = {
   rootMargin: "-100px 0px",
-  threshold: 0.333,
+  threshold: 0.5,
 };
 
 const observer = new IntersectionObserver((entries, _observer) => {

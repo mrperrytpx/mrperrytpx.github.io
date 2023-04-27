@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full" lang="en">
+<html class="h-full scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,11 +7,12 @@
     <link href="output.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
-      href="public/laptop-coding.svg"
+      href="public/laptop-coding-dark.svg"
       type="image/x-icon"
     />
     <script src="index.js" defer></script>
     <title>Tomislav Šiprak</title>
+    <meta name="description" content="Tomislav Šiprak's Portfolio website" />
   </head>
   <body class="h-full text-gray-200 bg-gray-800 transition-colors duration-500">
     <main id="wrapper" class="h-full">
@@ -33,9 +34,9 @@
           </div>
           <div class="text-center">
             <h1 class="text-3xl"><strong>Tomislav Šiprak</strong></h1>
-            <h3 class="text-lg">Self-taught Junior Web Developer</h3>
+            <h2 class="text-lg">Self-taught Junior Web Developer</h2>
           </div>
-          <div class="flex gap-4 mt-2 items-center justify-evenly w-full">
+          <div class="flex gap-4 mt-2 items-center justify-center w-full">
             <a
               href="https://www.github.com/mrperrytpx"
               target="_blank"
@@ -49,15 +50,92 @@
                 alt="Github SVG"
               />
             </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="no-referrer"
+              class="group hover:scale-110 hover:outline hover:outline-2 hover:outline-slate-200 transition-transform appearance-none rounded-lg h-10 w-10"
+            >
+              <img
+                class="w-full"
+                loading="eager"
+                src="public/linkedin.svg"
+                alt="LinkedIn SVG"
+              />
+            </a>
+            <a
+              href="mailto:tomislav.siprak1996@gmail.com"
+              class="group hover:scale-110 hover:outline hover:outline-2 p-[3px] hover:outline-slate-200 transition-transform appearance-none rounded-lg h-10 w-10"
+            >
+              <img
+                class="w-full"
+                loading="eager"
+                src="public/envelope.svg"
+                alt="Envelope SVG"
+              />
+            </a>
           </div>
         </div>
         <div
-          id="line"
           class="absolute bottom-0 w-0.5 opacity-75 h-1/4 bg-slate-500"
         ></div>
+        <div
+          class="absolute rotate-[30deg] origin-bottom bottom-0 w-0.5 opacity-75 h-[4%] bg-slate-500"
+        ></div>
+        <div
+          class="absolute -rotate-[30deg] origin-bottom bottom-0 w-0.5 opacity-75 h-[4%] bg-slate-500"
+        ></div>
+        <a
+          href="#about"
+          class="absolute bottom-0 w-12 opacity-0 h-[4%] bg-white"
+        ></a>
       </section>
 
       <section
+        id="about"
+        data-bg="bg-gray-700"
+        class="min-h-full p-4 border-b border-slate-500"
+      >
+        <div
+          class="flex text-base sm:text-lg flex-col gap-8 w-[min(500px,100%)] max-w-[500px] mt-4 lg:mt-20 mx-auto"
+        >
+          <p>
+            👋 Hello! My name is Tomislav and I am a self-taught junior web
+            developer from Croatia with a strong passion for front-end
+            development. My current focus is working with React and Next.js, but
+            I'm always open to trying out other technologies.
+          </p>
+          <p>
+            I have proficiency in HTML, CSS, JavaScript and TypeScript, as well
+            as experience working with various front-end libraries, including
+            React Hook Form, Redux Toolkit, Tanstack Query/Table and
+            TailwindCSS. Furthermore, I have expertise in using back-end
+            technologies such as Node.js, Express.js, and MongoDB.
+          </p>
+          <p>
+            I possess a well-rounded understanding of REST APIs and the
+            associated concepts. I have hands-on experience with RESTful
+            architecture and have worked extensively with APIs to build my
+            projects.
+          </p>
+          <p>
+            I am a self-motivated and detail-oriented developer who thrives in a
+            fast-paced and collaborative environment. I enjoy working with a
+            team of developers to solve complex problems and create innovative
+            solutions.
+          </p>
+          <p>
+            My portfolio showcases my expertise in creating responsive and
+            user-friendly web applications that deliver great user experiences.
+            I am constantly exploring new technologies and techniques to improve
+            my skills and stay up-to-date with the latest trends in the
+            industry.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="project1"
         data-bg="bg-zinc-950"
         class="min-h-full p-4 border-b border-slate-500"
       >
@@ -108,58 +186,59 @@
                 >Read more on Github</a
               >
             </div>
-            <h2 class="text-xl">Technoligies used:</h2>
+            <h2 class="text-xl">Technologies used:</h2>
             <div class="flex w-full gap-6 flex-wrap">
-              <div class="w-10 h-10">
+              <div class="relative w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/garbgarb/nextjs.svg"
                   alt="NextJS SVG"
                 />
+                <div className="absolute h-10 w-20 inset-0"></div>
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/garbgarb/typescript.svg"
                   alt="Typescript SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/garbgarb/tailwind.svg"
                   alt="Tailwind SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/garbgarb/nextauth.webp"
                   alt="Nextauth WEBP"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/garbgarb/redux.svg"
                   alt="Redux SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/garbgarb/react-query.svg"
                   alt="Redux SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/garbgarb/prisma.svg"
                   alt="Prisma SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/garbgarb/stripe.svg"
@@ -179,6 +258,7 @@
       </section>
 
       <section
+        id="project2"
         data-bg="bg-[#06101e]"
         class="min-h-full p-4 border-b last-of-type:border-0 border-slate-500"
       >
@@ -213,16 +293,16 @@
             >
             <div class="flex flex-col gap-2">
               <p>
-                A full-stack web application that allows you to search League of
-                Legends players, and provides you with access to their match
-                history, champion statistics in ranked queues, information on
-                whether they are currently engaged in a game, as well as details
-                on any challenges they may have completed.
+                A full-stack web application that allows you to search players
+                who play League of Legends and provides you with access to their
+                match history, champion statistics in ranked queues, information
+                on whether they are currently engaged in a game, as well as
+                details on any challenges they may have completed.
               </p>
               <p>
                 It's built using Create React App starter for the frontend with
-                <code>styled-components</code> as the styling framework and an
-                Express Node server for the backend.
+                'styled-components' as the styling framework and a Node
+                Express.js server for the backend.
               </p>
               <a
                 target="_blank"
@@ -232,51 +312,51 @@
                 >Read more on Github</a
               >
             </div>
-            <h2 class="text-xl">Technoligies used:</h2>
+            <h2 class="text-xl">Technologies used:</h2>
             <div class="flex w-full gap-6 flex-wrap">
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/slup/react.svg"
                   alt="React SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/slup/javascript.svg"
                   alt="Javascript SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/slup/styled-components.png"
                   alt="Styled-Components PNG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/slup/react-router.svg"
                   alt="React Router SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/slup/react-query.svg"
                   alt="Tanstack SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/slup/express-js.svg"
                   alt="Express SVG"
                 />
               </div>
-              <div class="w-10 h-10">
+              <div class="w-9 h-9">
                 <img
                   class="w-full aspect-square object-fill"
                   src="public/slup/mongodb.svg"
@@ -296,13 +376,95 @@
       </section>
 
       <section
+        id="contact"
         data-bg="bg-gray-800"
         class="min-h-full p-4 border-b last-of-type:border-0 border-slate-500"
       >
         <div
           class="flex flex-col w-full mt-4 mb-20 max-w-screen-2xl 2xl:mx-auto lg:mt-20 lg:flex-row lg:items-start lg:justify-evenly items-center gap-8"
         >
-          ...And more to come soon.
+          <h3 class="font-bold text-3xl">Contact</h3>
+          <div class="space-y-10 max-w-screen-md">
+            <p class="text-center sm:text-start">
+              Please feel free to contact me at any time using any of the
+              methods below and I will respond to you as soon as possible.
+            </p>
+
+            <div class="flex gap-4 justify-center md:justify-start">
+              <a
+                href="https://www.github.com/mrperrytpx"
+                target="_blank"
+                rel="no-referrer"
+                class="group hover:scale-110 hover:outline hover:outline-2 hover:outline-slate-200 transition-transform appearance-none rounded-lg h-10 w-10"
+              >
+                <img
+                  class="w-full"
+                  loading="eager"
+                  src="public/github.svg"
+                  alt="Github SVG"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="no-referrer"
+                class="group hover:scale-110 hover:outline hover:outline-2 hover:outline-slate-200 transition-transform appearance-none rounded-lg h-10 w-10"
+              >
+                <img
+                  class="w-full"
+                  loading="eager"
+                  src="public/linkedin.svg"
+                  alt="LinkedIn SVG"
+                />
+              </a>
+            </div>
+
+            <form
+              class="rounded-lg flex w-full flex-col gap-2 md:gap-6"
+              action="https://formspree.io/f/mlekayvo"
+              method="POST"
+            >
+              <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex flex-1 flex-col gap-2">
+                  <label class="group font-semibold flex flex-col">
+                    Your name:
+                    <input
+                      class="h-10 px-2 group-hover:border-white group-hover:border-2 text-black rounded-lg border-slate-500 border-2 w-full"
+                      required
+                      placeholder="Name"
+                      type="name"
+                      name="name"
+                    />
+                  </label>
+                  <label class="group font-semibold flex flex-col">
+                    Your email:
+                    <input
+                      class="h-10 px-2 group-hover:border-white group-hover:border-2 text-black rounded-lg border-slate-500 border-2 w-full"
+                      required
+                      placeholder="Email*"
+                      type="email"
+                      name="email"
+                    />
+                  </label>
+                </div>
+                <label class="w-full font-semibold flex-[2] flex flex-col">
+                  Your message:
+                  <textarea
+                    required
+                    class="h-32 rounded-lg text-black p-2 md:h-full border-slate-500 border-2 w-full"
+                    name="message"
+                  ></textarea>
+                </label>
+              </div>
+              <!-- your other form fields go here -->
+              <button
+                class="p-2 bg-gray-900 hover:border-white hover:border-2 shadow-sm shadow-slate-500 border border-slate-500 md:self-end w-full md:w-60 rounded-lg font-semibold focus:bg-slate-200 focus:text-black hover:bg-slate-200 hover:text-black"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
