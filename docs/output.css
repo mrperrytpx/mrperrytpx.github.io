@@ -534,10 +534,6 @@ video {
   inset: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .top-\[125\%\] {
   top: 125%;
 }
@@ -562,6 +558,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-auto {
@@ -608,16 +608,8 @@ video {
   height: 150px;
 }
 
-.h-\[4\%\] {
-  height: 4%;
-}
-
 .h-full {
   height: 100%;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .min-h-full {
@@ -626,10 +618,6 @@ video {
 
 .w-10 {
   width: 2.5rem;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .w-9 {
@@ -756,10 +744,6 @@ video {
   overflow-x: hidden;
 }
 
-.overflow-y-scroll {
-  overflow-y: scroll;
-}
-
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -803,11 +787,6 @@ video {
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-zinc-950 {
@@ -1018,17 +997,9 @@ video {
   transition-duration: 500ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 html,
 body {
   font-family: "Poppins", sans-serif;
-}
-
-.last-of-type\:border-0:last-of-type {
-  border-width: 0px;
 }
 
 .hover\:scale-105:hover {
