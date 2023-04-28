@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
+      height: {
+        screen: ["100vh /* fallback for Opera, IE and etc. */", "100dvh"],
+      },
       keyframes: {
         gradient: {
           "0%": { backgroundPosition: "0% 50%" },

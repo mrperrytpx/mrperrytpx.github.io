@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="h-full scroll-smooth" lang="en">
   <head>
+    <script src="index.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,15 +15,15 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"
     />
-    <script src="index.js" defer></script>
     <title>Tomislav Šiprak</title>
     <meta name="description" content="Tomislav Šiprak's Portfolio website" />
   </head>
-  <body class="h-full bg-opacity-50 text-gray-200 transition-all duration-500">
-    <main id="wrapper" class="h-full">
+  <body class="h-full text-gray-200 scroll-smooth transition-all duration-500">
+    <main id="wrapper" class="h-full overflow-x-hidden">
       <section
+        id="top"
         data-bg="bg-black"
-        class="relative min-h-full bg-gradient-radial from-black via-black to-zinc-900 flex p-4 flex-col items-center justify-center w-full"
+        class="border-b border-slate-500 relative min-h-full bg-gradient-radial from-black via-black to-zinc-900 flex p-4 flex-col items-center justify-center w-full"
       >
         <div
           id="middle"
@@ -86,28 +87,15 @@
             </a>
           </div>
         </div>
-        <div
-          class="absolute bottom-0 w-0.5 opacity-75 h-1/4 bg-slate-500"
-        ></div>
-        <div
-          class="absolute rotate-[30deg] origin-bottom bottom-0 w-0.5 opacity-75 h-[4%] bg-slate-500"
-        ></div>
-        <div
-          class="absolute -rotate-[30deg] origin-bottom bottom-0 w-0.5 opacity-75 h-[4%] bg-slate-500"
-        ></div>
-        <a
-          href="#about"
-          class="absolute bottom-0 w-12 opacity-0 h-[4%] bg-white"
-        ></a>
       </section>
 
       <section
         id="about"
         data-bg="bg-black"
-        class="min-h-full p-4 bg-gradient-to-t from-black via-black to-zinc-900"
+        class="border-b border-slate-500 p-4 bg-gradient-to-t min-h-full from-black via-black to-zinc-900"
       >
         <div
-          class="flex flex-col gap-8 w-[min(700px,100%)] max-w-[756px] mt-4 lg:mt-20 mx-auto"
+          class="flex flex-col gap-8 w-[min(700px,100%)] max-w-[756px] my-8 -translate-y-[60px] mx-auto"
         >
           <p id="pg" class="opacity-0 transition-all transform duration-500">
             👋 Hello! My name is Tomislav and I am a self-taught junior level
@@ -144,7 +132,11 @@
         </div>
       </section>
 
-      <section id="project1" data-bg="bg-zinc-950" class="min-h-full p-4">
+      <section
+        id="project1"
+        data-bg="bg-zinc-950"
+        class="border-b border-slate-500 min-h-full p-4"
+      >
         <div
           class="flex flex-col w-full mt-4 mb-20 max-w-screen-2xl 2xl:mx-auto lg:mt-20 lg:flex-row lg:items-start lg:justify-evenly items-center gap-8"
         >
@@ -152,9 +144,10 @@
             href="https://garbgarb.vercel.app"
             target="_blank"
             rel="no-referrer"
-            class="relative group w-[min(500px,100%)] max-w-[500px] flex-1 appearance-none hover:scale-105 transition-all outline outline-1 shadow-md shadow-slate-500 rounded-lg outline-slate-500 hover:border-slate-200"
+            id="projImage"
+            class="relative group w-[min(500px,100%)] opacity-0 -translate-x-[100px] max-w-[500px] flex-1 appearance-none hover:scale-105 transition-all duration-500 outline outline-1 shadow-md shadow-slate-500 rounded-lg outline-slate-500 hover:border-slate-200"
           >
-            <picture class="block w-full aspect-video">
+            <picture id="projImage" class="block w-full aspect-video">
               <img
                 class="w-full rounded-lg"
                 src="public/garbgarb.webp"
@@ -162,13 +155,13 @@
               />
             </picture>
             <div
-              class="hidden text-3xl uppercase font-bold bg-black bg-opacity-50 transition-all group-hover:flex absolute inset-0 group-hover:items-center group-hover:justify-center w-full h-full"
+              class="hidden text-3xl uppercase font-bold bg-black bg-opacity-[0.65] transition-all group-hover:flex absolute inset-0 group-hover:items-center group-hover:justify-center w-full h-full"
             >
               Visit
             </div>
           </a>
           <aside
-            class="flex-1 w-[min(500px,100%)] max-w-[500px] flex flex-col gap-8"
+            class="flex-1 w-[min(500px,100%)] max-w-[500px] opacity-0 transition-all translate-x-[100px] duration-500 flex flex-col gap-8"
           >
             <a
               href="https://garbgarb.vercel.app"
@@ -303,16 +296,17 @@
       <section
         id="project2"
         data-bg="bg-[#06101e]"
-        class="min-h-full p-4 border-b last-of-type:border-0 border-slate-500"
+        class="border-b border-slate-500 p-4 min-h-full"
       >
         <div
           class="flex flex-col w-full mt-4 mb-20 max-w-screen-2xl 2xl:mx-auto lg:mt-20 lg:flex-row lg:items-start lg:justify-evenly items-center gap-8"
         >
           <a
+            id="projImage"
             href="https://summonerlookup-production-fe40.up.railway.app/"
             target="_blank"
             rel="no-referrer"
-            class="relative group w-[min(500px,100%)] max-w-[500px] flex-1 appearance-none hover:scale-105 transition-all outline outline-1 shadow-md shadow-slate-500 rounded-lg outline-slate-500 hover:border-slate-200"
+            class="relative opacity-0 -translate-x-[100px] transition-all duration-500 group w-[min(500px,100%)] max-w-[500px] flex-1 appearance-none hover:scale-105 outline outline-1 shadow-md shadow-slate-500 rounded-lg outline-slate-500 hover:border-slate-200"
           >
             <picture class="block w-full aspect-video">
               <img
@@ -322,13 +316,13 @@
               />
             </picture>
             <div
-              class="hidden text-3xl uppercase font-bold bg-black bg-opacity-50 transition-all group-hover:flex absolute inset-0 group-hover:items-center group-hover:justify-center w-full h-full"
+              class="hidden text-3xl uppercase font-bold bg-black bg-opacity-[0.65] transition-all group-hover:flex absolute inset-0 group-hover:items-center group-hover:justify-center w-full h-full"
             >
               Visit
             </div>
           </a>
           <aside
-            class="flex-1 w-[min(500px,100%)] max-w-[500px] flex flex-col gap-8"
+            class="flex-1 w-[min(500px,100%)] max-w-[500px] opacity-0 duration-500 transition-all translate-x-[100px] flex flex-col gap-8"
           >
             <a
               href="https://summonerlookup-production-fe40.up.railway.app/"
@@ -451,12 +445,16 @@
         </div>
       </section>
 
-      <section data-bg="bg-black" id="contact" class="min-h-full p-4">
+      <section
+        data-bg="bg-black"
+        id="contact"
+        class="border-b border-slate-500 min-h-full p-4"
+      >
         <div
-          class="flex flex-col w-full mt-4 mb-20 max-w-screen-2xl 2xl:mx-auto lg:mt-20 lg:flex-row lg:items-start lg:justify-evenly items-center gap-8"
+          class="flex flex-col w-full h-full max-w-screen-2xl 2xl:mx-auto md:my-20 lg:flex-row lg:items-start lg:justify-evenly items-center gap-8"
         >
           <h3 class="font-bold text-3xl">Contact</h3>
-          <div class="space-y-10 max-w-screen-md">
+          <div class="flex flex-col gap-10 h-full max-w-screen-md">
             <p class="text-center sm:text-start">
               Please feel free to contact me at any time using any of the
               methods below and I will respond to you as soon as possible.
@@ -492,7 +490,7 @@
             </div>
 
             <form
-              class="rounded-lg flex w-full flex-col gap-2 md:gap-6"
+              class="rounded-lg h-full flex w-full flex-col gap-2 md:gap-6"
               action="https://formspree.io/f/mlekayvo"
               method="POST"
             >
@@ -536,6 +534,11 @@
                 Send
               </button>
             </form>
+            <a
+              href="#top"
+              class="block mt-auto md:text-start text-center hover:underline text-sm"
+              >Back to top ↑</a
+            >
           </div>
         </div>
       </section>
