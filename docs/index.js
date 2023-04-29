@@ -45,6 +45,14 @@ const pgObserver = new IntersectionObserver((entries, _observer) => {
 
 paragraphs.forEach((pg) => pgObserver.observe(pg));
 
+const libImgs = document.querySelectorAll("#libImg");
+
+console.log(libImgs.length);
+
+setInterval(() => {
+  libImgs[0].classList.toggle("grayscale");
+}, 1000);
+
 // // project observer
 
 // const asides = document.querySelectorAll("aside");
