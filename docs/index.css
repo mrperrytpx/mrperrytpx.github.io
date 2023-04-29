@@ -6,3 +6,9 @@ html,
 body {
   font-family: "Poppins", sans-serif;
 }
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}

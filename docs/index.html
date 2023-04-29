@@ -194,8 +194,9 @@
       <h3 class="font-bold md:pl-4 text-center md:text-left text-3xl">
         Tech I Use
       </h3>
+      <!-- Client Side -->
       <article
-        class="rounded-lg shadow-lg dark:shadow-cyan-900/50 dark:bg-cyan-900/50 shadow-amber-50 bg-amber-50 p-4 w-full flex flex-col gap-4 items-start justify-center"
+        class="rounded-lg shadow-md dark:shadow-cyan-900/50 dark:bg-cyan-900/50 shadow-amber-50 bg-amber-50 p-4 w-full flex flex-col gap-4 items-start justify-center"
       >
         <p class="text-sm font-semibold">
           Client-side technologies I have experience with:
@@ -205,7 +206,7 @@
             <div
               id="libImg"
               title="Javascript"
-              class="group-hover:grayscale-0 content-center group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 content-center group-hover:scale-125 transition-all relative w-10"
             >
               <img
                 class="w-full self-start aspect-square object-fill"
@@ -220,7 +221,7 @@
             <div
               id="libImg"
               title="Typescript"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10 h-10"
+              class="animate-gscale animation-delay-1000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10 h-10"
             >
               <img
                 class="w-full object-fill"
@@ -235,7 +236,7 @@
             <div
               id="libImg"
               title="React"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
                 class="w-full aspect-square object-fill"
@@ -250,7 +251,7 @@
             <div
               id="libImg"
               title="TailwindCSS"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-2000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
                 class="w-full aspect-square object-fill"
@@ -265,7 +266,7 @@
             <div
               id="libImg"
               title="styled-components"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
                 class="w-full object-fill"
@@ -283,7 +284,7 @@
             <div
               id="libImg"
               title="SCSS"
-              class="group-hover:grayscale-0 grid justify-items-end group-hover:scale-125 transition-all relative w-10 h-10"
+              class="animate-gscale animation-delay-3000 grayscale group-hover:!grayscale-0 grid justify-items-end group-hover:scale-125 transition-all relative w-10 h-10"
             >
               <img
                 class="w-full self-end object-fill"
@@ -298,7 +299,7 @@
             <div
               id="libImg"
               title="zod"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-3500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
                 class="w-full object-fill"
@@ -313,7 +314,7 @@
             <div
               id="libImg"
               title="Redux Toolkit"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
                 class="w-full object-fill"
@@ -328,7 +329,7 @@
             <div
               id="libImg"
               title="TanStack Query/Table"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-4500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
                 class="w-full object-fill"
@@ -341,15 +342,52 @@
               <p class="text-center self-center">TanStack Table</p>
             </div>
           </div>
+
+          <!-- light mode react-hook-form -->
+          <div
+            class="dark:hidden grid grid-rows-2 gap-2 group justify-items-center"
+          >
+            <div
+              id="libImg"
+              title="React Hook Form"
+              class="animate-gscale animation-delay-5000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+            >
+              <img
+                class="w-full object-fill"
+                src="public/react-hook-form.svg"
+                alt="React Hook Form SVG"
+              />
+            </div>
+            <p class="text-center self-center">React Hook Form</p>
+          </div>
+          <!-- dark mode react hook form -->
+          <div
+            class="hidden dark:grid grid-rows-2 gap-2 group justify-items-center"
+          >
+            <div
+              id="libImg"
+              title="React Hook Form"
+              class="animate-gscale animation-delay-5000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+            >
+              <img
+                class="w-full object-fill"
+                src="public/react-hook-form-dark.svg"
+                alt="React Hook Form SVG"
+              />
+            </div>
+            <p class="text-center self-center">React Hook Form</p>
+          </div>
         </div>
       </article>
+
+      <!-- Server-side -->
       <article
-        class="rounded-lg shadow-lg dark:shadow-cyan-700/50 shadow-amber-100/75 bg-amber-100/75 dark:bg-cyan-700/50 p-4 w-full flex flex-col gap-4 items-start justify-center"
+        class="rounded-lg shadow-md dark:shadow-cyan-700/50 shadow-amber-100/75 bg-amber-100/75 dark:bg-cyan-700/50 p-4 w-full flex flex-col gap-4 items-start justify-center"
       >
         <p class="text-sm font-semibold">
           Server-side technologies I have experience with:
         </p>
-        <div class="text-xs flex items-center gap-4 flex-wrap w-full">
+        <div class="text-xs flex items-center gap-8 flex-wrap w-full">
           <!-- light mode nextjs -->
           <div
             class="dark:hidden grid grid-rows-2-layout group gap-2 justify-items-center"
@@ -357,10 +395,10 @@
             <div
               id="libImg"
               title="Next.JS"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-20"
+              class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full aspect-video object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/garbgarb/nextjs.svg"
                 alt="Next.JS SVG"
               />
@@ -374,25 +412,25 @@
             <div
               id="libImg"
               title="Next.JS"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-20"
+              class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full aspect-video object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/garbgarb/nextjs-dark.svg"
                 alt="Next.JS SVG"
               />
             </div>
             <p class="text-center self-start">Next.JS</p>
           </div>
-          <!-- light mode nodejs -->
+          <!-- nodejs -->
           <div class="grid grid-rows-2-layout group gap-2 justify-items-center">
             <div
               id="libImg"
               title="Node.JS"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-20"
+              class="animate-gscale animation-delay-1000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full aspect-video object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/nodejs.svg"
                 alt="Node.JS SVG"
               />
@@ -406,10 +444,10 @@
             <div
               id="libImg"
               title="Express.js"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-20"
+              class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full aspect-video object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/slup/expressjs.svg"
                 alt="Express.JS SVG"
               />
@@ -423,10 +461,10 @@
             <div
               id="libImg"
               title="Express.js"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-20"
+              class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full aspect-video object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/slup/expressjs-dark.svg"
                 alt="Express.JS SVG"
               />
@@ -439,10 +477,10 @@
             <div
               id="libImg"
               title="MongoDB"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-20"
+              class="animate-gscale animation-delay-2000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full aspect-video object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/slup/mongodb.svg"
                 alt="MongoDB SVG"
               />
@@ -456,10 +494,10 @@
             <div
               id="libImg"
               title="Prisma ORM"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-20"
+              class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full aspect-video object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/garbgarb/prisma.svg"
                 alt="Prisma ORM SVG"
               />
@@ -473,10 +511,10 @@
             <div
               id="libImg"
               title="Prisma ORM"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-20"
+              class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full aspect-video object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/garbgarb/prisma-dark.svg"
                 alt="Prisma ORM SVG"
               />
@@ -489,10 +527,10 @@
             <div
               id="libImg"
               title="Redis"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-20"
+              class="animate-gscale animation-delay-3000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full aspect-video object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/redis.svg"
                 alt="Redis SVG"
               />
@@ -500,16 +538,14 @@
             <p class="text-center self-start">Redis</p>
           </div>
 
-          <div
-            class="grid grid-rows-2-layout h-[69px] gap-2 group justify-items-center"
-          >
+          <div class="grid grid-rows-2-layout gap-2 group justify-items-center">
             <div
               id="libImg"
               title="NextAuth"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-3500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/garbgarb/nextauth.webp"
                 alt="NextAuth SVG"
               />
@@ -518,15 +554,15 @@
           </div>
           <!-- lgiht mode JWT -->
           <div
-            class="dark:hidden grid grid-rows-2-layout h-[69px] gap-2 group justify-items-center"
+            class="dark:hidden grid grid-rows-2-layout gap-2 group justify-items-center"
           >
             <div
               id="libImg"
               title="JWT"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/uhh/jwt.svg"
                 alt="JWT SVG"
               />
@@ -535,30 +571,46 @@
           </div>
           <!-- dark mode JWD -->
           <div
-            class="hidden dark:grid h-[69px] grid-rows-2-layout gap-2 group justify-items-center"
+            class="hidden dark:grid grid-rows-2-layout gap-2 group justify-items-center"
           >
             <div
               id="libImg"
               title="JWT"
-              class="group-hover:grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
             >
               <img
-                class="w-full object-fill"
+                class="w-full aspect-square object-fill"
                 src="public/uhh/jwt-dark.svg"
                 alt="JWT SVG"
               />
             </div>
             <p class="text-center self-end">JWT</p>
           </div>
+
+          <div class="grid grid-rows-2-layout gap-2 group justify-items-center">
+            <div
+              id="libImg"
+              title="Stripe JS"
+              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+            >
+              <img
+                class="w-full aspect-square object-fill"
+                src="public/garbgarb/stripe.svg"
+                alt="Stripe SVG"
+              />
+            </div>
+            <p class="text-center self-end">StripeJS</p>
+          </div>
         </div>
       </article>
+
+      <!-- Other -->
       <article
-        class="rounded-lg mb-10 shadow-lg dark:shadow-cyan-900/50 dark:bg-cyan-900/50 shadow-amber-50 bg-amber-50 p-4 w-full flex flex-col gap-4 items-start justify-center"
+        class="rounded-lg mb-10 shadow-md dark:shadow-cyan-900/50 dark:bg-cyan-900/50 shadow-amber-50 bg-amber-50 p-4 w-full flex flex-col gap-4 items-start justify-center"
       >
         <p class="text-sm font-semibold">Other tooling:</p>
-        <div class="text-xs flex gap-2 flex-wrap w-full">
-          <span>git</span>
-          <span>Github</span>
+        <div class="text-sm flex gap-2 flex-wrap w-full">
+          <span>git+Github</span>
           <span>Railway</span>
           <span>Planetscale</span>
           <span>MongoDB Atlas</span>
@@ -566,8 +618,18 @@
           <span>Figma</span>
           <span>Prettier</span>
           <span>Postman</span>
+          <span>Vercel</span>
+          <span>Stripe</span>
         </div>
       </article>
+    </section>
+
+    <section class="w-full mx-auto max-w-screen-lg flex flex-col gap-8">
+      <h3 class="font-bold text-center md:text-left text-3xl">My Projects</h3>
+    </section>
+
+    <section class="w-full mx-auto max-w-screen-lg flex flex-col gap-8">
+      <h3 class="font-bold text-center md:text-left text-3xl">Contact Me</h3>
     </section>
   </body>
 </html>
