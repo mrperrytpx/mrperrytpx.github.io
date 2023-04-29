@@ -3,6 +3,9 @@ module.exports = {
   content: ["./docs/**/*.{html,js}"],
   theme: {
     extend: {
+      gridTemplateRows: {
+        layout: "1fr, 16px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },

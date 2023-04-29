@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html class="h-full scroll-smooth" lang="en">
+  <head>
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="public/laptop-coding-dark.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"
+    />
+    <title>Tomislav Šiprak</title>
+    <meta name="description" content="Tomislav Šiprak's Portfolio website" />
+  </head>
+  <body class="h-full text-gray-200 scroll-smooth transition-all duration-500">
+    <main id="wrapper" class="h-full overflow-x-hidden">
+      <section
+        id="top"
+        data-bg="bg-black"
+        class="border-b border-slate-500 relative min-h-full bg-gradient-radial from-black via-black to-zinc-900 flex p-4 flex-col items-center justify-center w-full"
+      >
+        <div
+          id="middle"
+          class="mb-20 rounded-lg flex flex-col items-center gap-4"
+        >
+          <div class="w-[150px] h-[150px]">
+            <img
+              class="w-full"
+              loading="eager"
+              src="public/laptop-coding.svg"
+              alt="Laptop SVG"
+            />
+          </div>
+          <div class="text-center space-y-1">
+            <h1
+              class="bg-gradient-to-br from-white via-cyan-600 to-white bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl"
+            >
+              Tomislav Šiprak
+            </h1>
+            <h2 class="text-lg md:text-2xl">
+              Self-taught Junior Web Developer
+            </h2>
+          </div>
+          <div class="flex gap-4 mt-2 items-center justify-center w-full">
+            <a
+              href="https://www.github.com/mrperrytpx"
+              target="_blank"
+              rel="no-referrer"
+              class="group hover:scale-110 hover:border-b-2 p-0.5 hover:border-slate-200 transition-transform appearance-none rounded-lg h-10 md:h-12 md:w-12 w-10"
+            >
+              <img
+                class="w-full"
+                loading="eager"
+                src="public/github.svg"
+                alt="Github SVG"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="no-referrer"
+              class="group hover:scale-110 hover:border-b-2 p-0.5 hover:border-slate-200 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
+            >
+              <img
+                class="w-full"
+                loading="eager"
+                src="public/linkedin.svg"
+                alt="LinkedIn SVG"
+              />
+            </a>
+            <a
+              href="#contact"
+              class="group hover:scale-110 hover:border-b-2 p-1 hover:border-slate-200 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
+            >
+              <img
+                class="w-full"
+                loading="eager"
+                src="public/envelope.svg"
+                alt="Envelope SVG"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        data-bg="bg-black"
+        class="border-b border-slate-500 p-4 bg-gradient-to-t from-black via-black to-zinc-900"
+      >
+        <div
+          class="flex flex-col gap-8 w-[min(700px,100%)] max-w-[756px] my-8 -translate-y-[60px] mx-auto"
+        >
+          <p id="pg" class="opacity-0 transition-all transform duration-500">
+            👋 Hello! My name is Tomislav and I am a self-taught junior level
+            web developer from Croatia with a strong passion for front-end
+            development. My current focus is working with React and Next.js, but
+            I'm always open to trying out other technologies.
+          </p>
+          <p id="pg" class="opacity-0 transition-all transform duration-500">
+            I have proficiency in HTML, CSS, JavaScript and TypeScript, as well
+            as experience working with various front-end libraries, including
+            React Hook Form, Redux Toolkit, Tanstack Query/Table and
+            TailwindCSS. Furthermore, I have expertise in using back-end
+            technologies such as Node.js, Express.js, and MongoDB.
+          </p>
+          <p id="pg" class="opacity-0 transition-all transform duration-500">
+            I possess a well-rounded understanding of REST APIs and the
+            associated concepts. I have hands-on experience with RESTful
+            architecture and have worked extensively with APIs to build my
+            projects.
+          </p>
+          <p id="pg" class="opacity-0 transition-all transform duration-500">
+            I am a self-motivated and detail-oriented developer who thrives in a
+            fast-paced and collaborative environment. I enjoy working with a
+            team of developers to solve complex problems and create innovative
+            solutions.
+          </p>
+          <p id="pg" class="opacity-0 transition-all transform duration-500">
+            My portfolio showcases my expertise in creating responsive and
+            user-friendly web applications that deliver great user experiences.
+            I am constantly exploring new technologies and techniques to improve
+            my skills and stay up-to-date with the latest trends in the
+            industry.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="project1"
+        data-bg="bg-zinc-950"
+        class="border-b border-slate-500 min-h-full p-4"
+      >
+        <div
+          class="flex flex-col w-full mt-4 mb-20 max-w-screen-2xl 2xl:mx-auto lg:mt-20 lg:flex-row lg:items-start lg:justify-evenly items-center gap-8"
+        >
+          <a
+            href="https://garbgarb.vercel.app"
+            target="_blank"
+            rel="no-referrer"
+            id="projImage"
+            class="relative group w-[min(500px,100%)] opacity-0 -translate-x-[100px] max-w-[500px] flex-1 appearance-none hover:scale-105 transition-all duration-500 outline outline-1 shadow-md shadow-slate-500 rounded-lg outline-slate-500 hover:border-slate-200"
+          >
+            <picture id="projImage" class="block w-full aspect-video">
+              <img
+                class="w-full rounded-lg"
+                src="public/garbgarb.webp"
+                alt="Garbgarb website preview"
+              />
+            </picture>
+            <div
+              class="hidden text-3xl uppercase font-bold bg-black bg-opacity-[0.65] transition-all group-hover:flex absolute inset-0 group-hover:items-center group-hover:justify-center w-full h-full"
+            >
+              Visit
+            </div>
+          </a>
+          <aside
+            class="flex-1 w-[min(500px,100%)] max-w-[500px] opacity-0 transition-all translate-x-[100px] duration-500 flex flex-col gap-8"
+          >
+            <a
+              href="https://garbgarb.vercel.app"
+              target="_blank"
+              rel="no-referrer"
+              role="heading"
+              aria-level="2"
+              class="appearance-none text-2xl hover:underline text-center lg:text-left w-full focus:underline"
+              ><strong>GarbGarb clothing</strong></a
+            >
+            <div class="flex flex-col gap-2">
+              <p>
+                An e-commerce store specializing in unique t-shirts,
+                sweatshirts, and hoodies with "whacky" sayings on the front that
+                I've seen on the internet.
+              </p>
+              <p>
+                Full-stack web application built using the Next.js framework as
+                the backbone and TailwindCSS as the styling framework.
+              </p>
+              <a
+                target="_blank"
+                rel="no-referrer"
+                href="https://www.github.com/mrperrytpx/garbgarb"
+                class="appearance-none underline w-full mt-4 self-start"
+                >Read more on Github >></a
+              >
+            </div>
+            <h2 class="text-xl uppercase">Technologies used:</h2>
+            <div class="flex w-full gap-6 flex-wrap">
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/garbgarb/nextjs.svg"
+                  alt="NextJS SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  Next.js
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/garbgarb/typescript.svg"
+                  alt="Typescript SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  Typescript
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/garbgarb/tailwind.svg"
+                  alt="Tailwind SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  TailwindCSS
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/garbgarb/nextauth.webp"
+                  alt="Nextauth WEBP"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  NextAuth
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/garbgarb/redux.svg"
+                  alt="Redux SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  Redux Toolkit
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/garbgarb/react-query.svg"
+                  alt="Tanstack SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  TanStack Query/Table
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/garbgarb/prisma.svg"
+                  alt="Prisma SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  Prisma
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/garbgarb/stripe.svg"
+                  alt="Stripe SVH"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  Stripe
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section
+        id="project2"
+        data-bg="bg-[#06101e]"
+        class="border-b border-slate-500 p-4 min-h-full"
+      >
+        <div
+          class="flex flex-col w-full mt-4 mb-20 max-w-screen-2xl 2xl:mx-auto lg:mt-20 lg:flex-row lg:items-start lg:justify-evenly items-center gap-8"
+        >
+          <a
+            id="projImage"
+            href="https://summonerlookup-production-fe40.up.railway.app/"
+            target="_blank"
+            rel="no-referrer"
+            class="relative opacity-0 -translate-x-[100px] transition-all duration-500 group w-[min(500px,100%)] max-w-[500px] flex-1 appearance-none hover:scale-105 outline outline-1 shadow-md shadow-slate-500 rounded-lg outline-slate-500 hover:border-slate-200"
+          >
+            <picture class="block w-full aspect-video">
+              <img
+                class="w-full rounded-lg"
+                src="public/slup.webp"
+                alt="Summoner Lookup website preview"
+              />
+            </picture>
+            <div
+              class="hidden text-3xl uppercase font-bold bg-black bg-opacity-[0.65] transition-all group-hover:flex absolute inset-0 group-hover:items-center group-hover:justify-center w-full h-full"
+            >
+              Visit
+            </div>
+          </a>
+          <aside
+            class="flex-1 w-[min(500px,100%)] max-w-[500px] opacity-0 duration-500 transition-all translate-x-[100px] flex flex-col gap-8"
+          >
+            <a
+              href="https://summonerlookup-production-fe40.up.railway.app/"
+              target="_blank"
+              rel="no-referrer"
+              role="heading"
+              aria-level="2"
+              class="appearance-none text-2xl hover:underline text-center lg:text-left w-full focus:underline"
+              ><strong>Summoner Lookup</strong></a
+            >
+            <div class="flex flex-col gap-2">
+              <p>
+                A full-stack web application that allows you to search players
+                who play League of Legends and provides you with access to their
+                match history, champion statistics in ranked queues, information
+                on whether they are currently engaged in a game, as well as
+                details on any challenges they may have completed.
+              </p>
+              <p>
+                It's built using Create React App starter for the frontend with
+                'styled-components' as the styling framework and a Node
+                Express.js server for the backend.
+              </p>
+              <a
+                target="_blank"
+                rel="no-referrer"
+                href="https://github.com/mrperrytpx/SummonerLookup"
+                class="appearance-none underline mt-4 inline self-start"
+                >Read more on Github >></a
+              >
+            </div>
+            <h2 class="text-xl">Technologies used:</h2>
+            <div class="flex w-full gap-6 flex-wrap">
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/slup/react.svg"
+                  alt="React SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  React
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/slup/javascript.svg"
+                  alt="Javascript SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  Javascript
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/slup/styled-components.png"
+                  alt="Styled-Components PNG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  styled-components
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/slup/react-router.svg"
+                  alt="React Router SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  React Router
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/slup/react-query.svg"
+                  alt="Tanstack SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  TanStack Query/Table
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/slup/express-js.svg"
+                  alt="Express SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  Express.js
+                </div>
+              </div>
+              <div class="group relative w-9 h-9">
+                <img
+                  class="w-full aspect-square object-fill"
+                  src="public/slup/mongodb.svg"
+                  alt="MongoDB Leaf SVG"
+                />
+                <div
+                  class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                >
+                  MongoDB
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="border-r border-slate-500 min-h-full p-4">
+        <div class="flex flex-col w-full mt-8">
+          <h3 class="text-3xl text-center">Projects</h3>
+          <div class="grid grid-cols-1 grid-rows-3">
+            <div
+              class="flex flex-col w-full mt-4 max-w-[500px] items-center gap-8"
+            >
+              <a
+                id="projImage"
+                href="https://summonerlookup-production-fe40.up.railway.app/"
+                target="_blank"
+                rel="no-referrer"
+                class="relative opacity-0 -translate-x-[100px] transition-all duration-500 group w-[min(500px,100%)] max-w-[500px] flex-1 appearance-none hover:scale-105 outline outline-1 shadow-md shadow-slate-500 rounded-lg outline-slate-500 hover:border-slate-200"
+              >
+                <picture class="block w-full aspect-video">
+                  <img
+                    class="w-full rounded-lg"
+                    src="public/slup.webp"
+                    alt="Summoner Lookup website preview"
+                  />
+                </picture>
+                <div
+                  class="hidden text-3xl uppercase font-bold bg-black bg-opacity-[0.65] transition-all group-hover:flex absolute inset-0 group-hover:items-center group-hover:justify-center w-full h-full"
+                >
+                  Visit
+                </div>
+              </a>
+              <aside
+                class="flex-1 w-[min(500px,100%)] max-w-[500px] opacity-0 duration-500 transition-all translate-x-[100px] flex flex-col gap-8"
+              >
+                <a
+                  href="https://summonerlookup-production-fe40.up.railway.app/"
+                  target="_blank"
+                  rel="no-referrer"
+                  role="heading"
+                  aria-level="2"
+                  class="appearance-none text-2xl hover:underline text-center lg:text-left w-full focus:underline"
+                  ><strong>Summoner Lookup</strong></a
+                >
+                <div class="flex flex-col gap-2">
+                  <p>
+                    A full-stack web application that allows you to search
+                    players who play League of Legends and provides you with
+                    access to their match history, champion statistics in ranked
+                    queues, information on whether they are currently engaged in
+                    a game, as well as details on any challenges they may have
+                    completed.
+                  </p>
+                  <p>
+                    It's built using Create React App starter for the frontend
+                    with 'styled-components' as the styling framework and a Node
+                    Express.js server for the backend.
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="no-referrer"
+                    href="https://github.com/mrperrytpx/SummonerLookup"
+                    class="appearance-none underline mt-4 inline self-start"
+                    >Read more on Github >></a
+                  >
+                </div>
+                <h2 class="text-xl">Technologies used:</h2>
+                <div class="flex w-full gap-6 flex-wrap">
+                  <div class="group relative w-9 h-9">
+                    <img
+                      class="w-full aspect-square object-fill"
+                      src="public/slup/react.svg"
+                      alt="React SVG"
+                    />
+                    <div
+                      class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                    >
+                      React
+                    </div>
+                  </div>
+                  <div class="group relative w-9 h-9">
+                    <img
+                      class="w-full aspect-square object-fill"
+                      src="public/slup/javascript.svg"
+                      alt="Javascript SVG"
+                    />
+                    <div
+                      class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                    >
+                      Javascript
+                    </div>
+                  </div>
+                  <div class="group relative w-9 h-9">
+                    <img
+                      class="w-full aspect-square object-fill"
+                      src="public/slup/styled-components.png"
+                      alt="Styled-Components PNG"
+                    />
+                    <div
+                      class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                    >
+                      styled-components
+                    </div>
+                  </div>
+                  <div class="group relative w-9 h-9">
+                    <img
+                      class="w-full aspect-square object-fill"
+                      src="public/slup/react-router.svg"
+                      alt="React Router SVG"
+                    />
+                    <div
+                      class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                    >
+                      React Router
+                    </div>
+                  </div>
+                  <div class="group relative w-9 h-9">
+                    <img
+                      class="w-full aspect-square object-fill"
+                      src="public/slup/react-query.svg"
+                      alt="Tanstack SVG"
+                    />
+                    <div
+                      class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                    >
+                      TanStack Query/Table
+                    </div>
+                  </div>
+                  <div class="group relative w-9 h-9">
+                    <img
+                      class="w-full aspect-square object-fill"
+                      src="public/slup/express-js.svg"
+                      alt="Express SVG"
+                    />
+                    <div
+                      class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                    >
+                      Express.js
+                    </div>
+                  </div>
+                  <div class="group relative w-9 h-9">
+                    <img
+                      class="w-full aspect-square object-fill"
+                      src="public/slup/mongodb.svg"
+                      alt="MongoDB Leaf SVG"
+                    />
+                    <div
+                      class="hidden group-hover:inline-block text-sm absolute text-center py-1 px-2 rounded-lg bg-slate-800 top-[125%]"
+                    >
+                      MongoDB
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        data-bg="bg-black"
+        id="contact"
+        class="border-b border-slate-500 min-h-full p-4"
+      >
+        <div
+          class="flex flex-col w-full h-full max-w-screen-2xl mt-8 2xl:mx-auto md:my-20 lg:flex-row lg:items-start lg:justify-evenly items-center gap-8"
+        >
+          <h3 class="font-bold text-3xl">Contact</h3>
+          <div class="flex flex-col gap-10 h-full max-w-screen-md">
+            <p class="text-center sm:text-start">
+              Please feel free to contact me at any time using any of the
+              methods below and I will respond to you as soon as possible.
+            </p>
+
+            <div class="flex gap-4 justify-center md:justify-start">
+              <a
+                href="https://www.github.com/mrperrytpx"
+                target="_blank"
+                rel="no-referrer"
+                class="group hover:scale-110 hover:border-b-2 p-0.5 hover:border-slate-200 transition-transform appearance-none rounded-lg h-10 w-10"
+              >
+                <img
+                  class="w-full"
+                  loading="eager"
+                  src="public/github.svg"
+                  alt="Github SVG"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="no-referrer"
+                class="group hover:scale-110 hover:border-b-2 p-0.5 hover:border-slate-200 transition-transform appearance-none rounded-lg h-10 w-10"
+              >
+                <img
+                  class="w-full"
+                  loading="eager"
+                  src="public/linkedin.svg"
+                  alt="LinkedIn SVG"
+                />
+              </a>
+            </div>
+
+            <form
+              class="rounded-lg h-full flex w-full flex-col gap-2 md:gap-6"
+              action="https://formspree.io/f/mlekayvo"
+              method="POST"
+            >
+              <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex flex-1 flex-col gap-2">
+                  <label class="group font-semibold flex flex-col">
+                    Your name:
+                    <input
+                      class="h-10 px-2 group-hover:border-white group-hover:border-2 text-black rounded-lg border-slate-500 border-2 w-full"
+                      required
+                      placeholder="Name*"
+                      type="name"
+                      name="name"
+                    />
+                  </label>
+                  <label class="group font-semibold flex flex-col">
+                    Your email:
+                    <input
+                      class="h-10 px-2 group-hover:border-white group-hover:border-2 text-black rounded-lg border-slate-500 border-2 w-full"
+                      required
+                      placeholder="Email*"
+                      type="email"
+                      name="email"
+                    />
+                  </label>
+                </div>
+                <label class="w-full font-semibold flex-[2] flex flex-col">
+                  Your message:
+                  <textarea
+                    required
+                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    class="h-32 rounded-lg text-black p-2 md:h-full border-slate-500 border-2 w-full"
+                    name="message"
+                  ></textarea>
+                </label>
+              </div>
+              <!-- your other form fields go here -->
+              <button
+                class="p-2 bg-gray-900 hover:border-white hover:border-2 shadow-sm shadow-slate-500 border border-slate-500 md:self-end w-full md:w-60 rounded-lg font-semibold focus:bg-slate-200 focus:text-black hover:bg-slate-200 hover:text-black"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+            <a
+              href="#top"
+              class="block mt-auto md:text-start text-center hover:underline text-sm"
+              >Back to top ↑</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
