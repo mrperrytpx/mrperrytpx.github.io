@@ -69,15 +69,15 @@ module.exports = {
         screen: ["100vh /* fallback for Opera, IE and etc. */", "100dvh"],
       },
       keyframes: {
-        gradient: {
-          "0%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
-          "100%": { backgroundPosition: "0% 50%" },
-        },
         gscale: {
           "0%": { filter: "grayscale(1)" },
           "50%": { filter: "grayscale(0)" },
           "100%": { filter: "grayscale(1)" },
+        },
+        gradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
         },
       },
       animation: {

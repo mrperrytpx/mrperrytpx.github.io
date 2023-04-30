@@ -153,7 +153,7 @@
 
         <p
           id="pg"
-          class="opacity-0 lg:-translate-x-16 translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-start text-center md:text-left"
+          class="opacity-0 -translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-start text-center md:text-left"
         >
           I have proficiency in HTML, CSS, JavaScript and TypeScript, as well as
           experience working with various front-end libraries, including React
@@ -163,7 +163,7 @@
         </p>
         <p
           id="pg"
-          class="opacity-0 translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-end text-center md:text-right"
+          class="opacity-0 translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-end text-center md:text-left"
         >
           I possess a well-rounded understanding of REST APIs and the associated
           concepts. I have hands-on experience with RESTful architecture and
@@ -171,7 +171,7 @@
         </p>
         <p
           id="pg"
-          class="opacity-0 lg:-translate-x-16 translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-start text-center md:text-left"
+          class="opacity-0 -translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-start text-center md:text-left"
         >
           I am a self-motivated and detail-oriented developer who thrives in a
           fast-paced and collaborative environment. I enjoy working with a team
@@ -180,7 +180,7 @@
         </p>
         <p
           id="pg"
-          class="opacity-0 translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-end text-center md:text-right"
+          class="opacity-0 translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-end text-center md:text-left"
         >
           My portfolio showcases my expertise in creating responsive and
           user-friendly web applications that deliver great user experiences. I
@@ -201,15 +201,17 @@
         <p class="text-sm font-semibold">
           Client-side technologies I have experience with:
         </p>
-        <div class="text-xs flex gap-4 items-center flex-wrap w-full">
+        <div
+          class="text-xs flex gap-4 items-center justify-center md:justify-start flex-wrap w-full"
+        >
           <div class="grid grid-rows-2 gap-2 group justify-items-center">
             <div
               id="libImg"
               title="Javascript"
-              class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 content-center group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full self-start aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/slup/javascript.svg"
                 alt="Javascript SVG"
               />
@@ -221,10 +223,10 @@
             <div
               id="libImg"
               title="Typescript"
-              class="animate-gscale animation-delay-1000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10 h-10"
+              class="animate-gscale animation-delay-1000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full object-fill"
+                class="w-full aspect-square"
                 src="public/garbgarb/typescript.svg"
                 alt="Typescript SVG"
               />
@@ -236,10 +238,10 @@
             <div
               id="libImg"
               title="React"
-              class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/slup/react.svg"
                 alt="React SVG"
               />
@@ -251,10 +253,10 @@
             <div
               id="libImg"
               title="TailwindCSS"
-              class="animate-gscale animation-delay-2000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-2000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/garbgarb/tailwind.svg"
                 alt="TailwindCSS SVG"
               />
@@ -266,10 +268,10 @@
             <div
               id="libImg"
               title="styled-components"
-              class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full object-fill"
+                class="w-full"
                 src="public/styled-components.webp"
                 alt="styled-components WEBP"
               />
@@ -284,10 +286,10 @@
             <div
               id="libImg"
               title="SCSS"
-              class="animate-gscale animation-delay-3000 grayscale group-hover:!grayscale-0 grid justify-items-end group-hover:scale-125 transition-all relative w-10 h-10"
+              class="animate-gscale animation-delay-3000 grayscale group-hover:!grayscale-0 grid justify-items-end group-hover:scale-125 transition-all w-10 h-10"
             >
               <img
-                class="w-full self-end object-fill"
+                class="w-full self-end"
                 src="public/scss.webp"
                 alt="SCSS WEBP"
               />
@@ -299,13 +301,9 @@
             <div
               id="libImg"
               title="zod"
-              class="animate-gscale animation-delay-3500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-3500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
-              <img
-                class="w-full object-fill"
-                src="public/zod.svg"
-                alt="zod SVG"
-              />
+              <img class="w-full" src="public/zod.svg" alt="zod SVG" />
             </div>
             <p class="text-center self-center">zod</p>
           </div>
@@ -314,10 +312,10 @@
             <div
               id="libImg"
               title="Redux Toolkit"
-              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full object-fill"
+                class="w-full"
                 src="public/garbgarb/redux.svg"
                 alt="Redux SVG"
               />
@@ -329,10 +327,10 @@
             <div
               id="libImg"
               title="TanStack Query/Table"
-              class="animate-gscale animation-delay-4500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-4500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full object-fill"
+                class="w-full"
                 src="public/garbgarb/react-query.svg"
                 alt="Tanstack SVG"
               />
@@ -350,10 +348,10 @@
             <div
               id="libImg"
               title="React Hook Form"
-              class="animate-gscale animation-delay-5000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-5000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full object-fill"
+                class="w-full"
                 src="public/react-hook-form.svg"
                 alt="React Hook Form SVG"
               />
@@ -367,10 +365,10 @@
             <div
               id="libImg"
               title="React Hook Form"
-              class="animate-gscale animation-delay-5000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-5000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full object-fill"
+                class="w-full"
                 src="public/react-hook-form-dark.svg"
                 alt="React Hook Form SVG"
               />
@@ -382,12 +380,14 @@
 
       <!-- Server-side -->
       <article
-        class="rounded-lg shadow-md dark:shadow-cyan-700/50 shadow-amber-100/75 bg-amber-100/75 dark:bg-cyan-700/50 p-4 w-full flex flex-col gap-4 items-start justify-center"
+        class="rounded-lg shadow-md dark:shadow-cyan-700/50 shadow-amber-50 bg-amber-50 dark:bg-cyan-700/50 p-4 w-full flex flex-col gap-4 items-start justify-center"
       >
         <p class="text-sm font-semibold">
           Server-side technologies I have experience with:
         </p>
-        <div class="text-xs flex items-center gap-8 flex-wrap w-full">
+        <div
+          class="text-xs flex items-center justify-center md:justify-start gap-8 flex-wrap w-full"
+        >
           <!-- light mode nextjs -->
           <div
             class="dark:hidden grid grid-rows-2-layout group gap-2 justify-items-center"
@@ -395,10 +395,10 @@
             <div
               id="libImg"
               title="Next.JS"
-              class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/garbgarb/nextjs.svg"
                 alt="Next.JS SVG"
               />
@@ -412,10 +412,10 @@
             <div
               id="libImg"
               title="Next.JS"
-              class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/garbgarb/nextjs-dark.svg"
                 alt="Next.JS SVG"
               />
@@ -427,10 +427,10 @@
             <div
               id="libImg"
               title="Node.JS"
-              class="animate-gscale animation-delay-1000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-1000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/nodejs.svg"
                 alt="Node.JS SVG"
               />
@@ -444,10 +444,10 @@
             <div
               id="libImg"
               title="Express.js"
-              class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/slup/expressjs.svg"
                 alt="Express.JS SVG"
               />
@@ -461,10 +461,10 @@
             <div
               id="libImg"
               title="Express.js"
-              class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/slup/expressjs-dark.svg"
                 alt="Express.JS SVG"
               />
@@ -477,10 +477,10 @@
             <div
               id="libImg"
               title="MongoDB"
-              class="animate-gscale animation-delay-2000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-2000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/slup/mongodb.svg"
                 alt="MongoDB SVG"
               />
@@ -494,10 +494,10 @@
             <div
               id="libImg"
               title="Prisma ORM"
-              class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/garbgarb/prisma.svg"
                 alt="Prisma ORM SVG"
               />
@@ -511,10 +511,10 @@
             <div
               id="libImg"
               title="Prisma ORM"
-              class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/garbgarb/prisma-dark.svg"
                 alt="Prisma ORM SVG"
               />
@@ -527,10 +527,10 @@
             <div
               id="libImg"
               title="Redis"
-              class="animate-gscale animation-delay-3000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-3000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/redis.svg"
                 alt="Redis SVG"
               />
@@ -542,10 +542,10 @@
             <div
               id="libImg"
               title="NextAuth"
-              class="animate-gscale animation-delay-3500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-3500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/garbgarb/nextauth.webp"
                 alt="NextAuth SVG"
               />
@@ -559,10 +559,10 @@
             <div
               id="libImg"
               title="JWT"
-              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/uhh/jwt.svg"
                 alt="JWT SVG"
               />
@@ -576,10 +576,10 @@
             <div
               id="libImg"
               title="JWT"
-              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/uhh/jwt-dark.svg"
                 alt="JWT SVG"
               />
@@ -591,10 +591,10 @@
             <div
               id="libImg"
               title="Stripe JS"
-              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all relative w-10"
+              class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square object-fill"
+                class="w-full aspect-square"
                 src="public/garbgarb/stripe.svg"
                 alt="Stripe SVG"
               />
@@ -625,7 +625,78 @@
     </section>
 
     <section class="w-full mx-auto max-w-screen-lg flex flex-col gap-8">
-      <h3 class="font-bold text-center md:text-left text-3xl">My Projects</h3>
+      <h3 class="font-bold text-center md:text-left text-3xl pl-4">
+        My Projects
+      </h3>
+      <div class="w-full mb-20 grid grid-rows-3 p-4 gap-4">
+        <div class="flex flex-col md:flex-row gap-4">
+          <a
+            href="https://garbgarb.vercel.app"
+            target="_blank"
+            rel="no-referrer"
+            id="projImage"
+            class="relative self-center md:self-start max-w-[500px] group transition-all duration-300 appearance-none hover:scale-105 rounded-lg"
+          >
+            <img
+              class="rounded-lg"
+              src="public/garbgarb.webp"
+              alt="Garbgarb website preview"
+            />
+            <div
+              class="hidden group-hover:grid absolute inset-0 rounded-lg text-3xl text-gray-200 uppercase font-bold bg-black/50 duration-300 transition-all group-hover:items-center group-hover:justify-center"
+            >
+              Visit
+            </div>
+          </a>
+          <div class="flex flex-col justify-around gap-4 md:gap-0">
+            <h4 class="text-2xl font-semibold text-center md:text-left">
+              GarbGarb
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+              tempore officia quisquam obcaecati ratione harum odio alias
+              deserunt quos sequi! Officia sint, autem ut similique ea deserunt
+              assumenda odit, corporis beatae quia dolores reprehenderit.
+              Temporibus voluptatem placeat ut. Sequi non quisquam veritatis
+              quas qui neque totam earum illo tempore iste?
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="flex flex-col md:flex-row gap-4">
+          <a
+            href="https://garbgarb.vercel.app"
+            target="_blank"
+            rel="no-referrer"
+            id="projImage"
+            class="relative self-center md:self-start max-w-[500px] group transition-all duration-300 appearance-none hover:scale-105 rounded-lg"
+          >
+            <img
+              class="rounded-lg"
+              src="public/slup.webp"
+              alt="Garbgarb website preview"
+            />
+            <div
+              class="hidden group-hover:grid absolute inset-0 rounded-lg text-3xl text-gray-200 uppercase font-bold bg-black/50 duration-300 transition-all group-hover:items-center group-hover:justify-center"
+            >
+              Visit
+            </div>
+          </a>
+          <div class="flex flex-col justify-around gap-4 md:gap-0">
+            <h4 class="text-2xl font-semibold text-center md:text-left">
+              Summoner Lookup
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+              tempore officia quisquam obcaecati ratione harum odio alias
+              deserunt quos sequi! Officia sint, autem ut similique ea deserunt
+              assumenda odit, corporis beatae quia dolores reprehenderit.
+              Temporibus voluptatem placeat ut. Sequi non quisquam veritatis
+              quas qui neque totam earum illo tempore iste?
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="w-full mx-auto max-w-screen-lg flex flex-col gap-8">
