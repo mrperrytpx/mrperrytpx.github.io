@@ -1,29 +1,26 @@
-// // background observer
-// const sections = document.querySelectorAll("section");
+const linkEl = document.querySelector('link[rel="icon"]');
 
-// const bgOptions = {
-//   rootMargin: "0px",
-//   threshold: 0.5,
-// };
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  linkEl.href = "public/laptop-coding.svg";
+} else {
+  linkEl.href = "public/laptop-coding-dark.svg";
+}
 
-// if (![...document.body.classList].find((x) => x.includes("bg-"))) {
-//   document.body.classList.add("bg-black");
-// }
-
-// const observer = new IntersectionObserver((entries, _observer) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       const bgColor = entry.target.dataset.bg;
-//       const currColor = [...document.body.classList].find((x) =>
-//         x.includes("bg-")
-//       );
-//       if (currColor) document.body.classList.remove(currColor);
-//       document.body.classList.add(bgColor);
-//     }
-//   });
-// }, bgOptions);
-
-// sections.forEach((section) => observer.observe(section));
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", () => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      linkEl.href = "public/laptop-coding.svg";
+    } else {
+      linkEl.href = "public/laptop-coding-dark.svg";
+    }
+  });
 
 // // Paragraph observer
 const paragraphs = document.querySelectorAll("#pg");
@@ -44,6 +41,8 @@ const pgObserver = new IntersectionObserver((entries, _observer) => {
 }, pgOptions);
 
 paragraphs.forEach((pg) => pgObserver.observe(pg));
+
+// //
 
 // // project observer
 
