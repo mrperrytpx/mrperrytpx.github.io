@@ -76,41 +76,10 @@ toggleButton.addEventListener("click", () => {
   toggleMobileNav();
 });
 
-const navLinks = document.querySelectorAll("#navLink");
+const navLinks = document.querySelectorAll("[data-id='navLink']");
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     toggleMobileNav();
   });
 });
-
-// // project observer
-
-// const asides = document.querySelectorAll("aside");
-// const projImages = document.querySelectorAll("#projImage");
-
-// const projectsOptions = {
-//   rootMargin: "0px",
-//   threshold: 0.3,
-// };
-
-// const asideObserver = new IntersectionObserver((entries, _observer) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.remove("opacity-0");
-//       entry.target.classList.remove("translate-x-[100px]");
-//     }
-//   });
-// }, projectsOptions);
-
-// const projImagesObserver = new IntersectionObserver((entries, _observer) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.remove("opacity-0");
-//       entry.target.classList.remove("-translate-x-[100px]");
-//     }
-//   });
-// }, projectsOptions);
-
-// asides.forEach((aside) => asideObserver.observe(aside));
-// projImages.forEach((image) => projImagesObserver.observe(image));

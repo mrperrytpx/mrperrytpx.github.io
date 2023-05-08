@@ -17,7 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"
     />
     <title>Tomislav Šiprak</title>
-    <meta name="description" content="Tomislav Šiprak's Portfolio website" />
+    <meta property="og:title" content="Tomislav Šiprak" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mrperrytpx.github.io/" />
+    <meta
+      property="og:description"
+      content="Tomislav Šiprak's Portfolio website."
+    />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="description" content="Tomislav Šiprak's Portfolio website." />
   </head>
   <body
     class="min-h-full relative overflow-x-hidden flex flex-col gap-20 dark:bg-zinc-950 text-gray-800 dark:text-gray-200 scroll-smooth transition-all duration-500"
@@ -58,7 +66,7 @@
         >
           <li>
             <a
-              id="navLink"
+              data-id="navLink"
               class="flex justify-center items-center px-2 border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
               href="#about"
               >About Me</a
@@ -66,7 +74,7 @@
           </li>
           <li>
             <a
-              id="navLink"
+              data-id="navLink"
               class="flex justify-center items-center px-2 border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
               href="#tech"
               >Tech I Use</a
@@ -74,7 +82,7 @@
           </li>
           <li>
             <a
-              id="navLink"
+              data-id="navLink"
               class="flex justify-center items-center px-2 border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
               href="#projects"
               >Projects</a
@@ -82,7 +90,7 @@
           </li>
           <li>
             <a
-              id="navLink"
+              data-id="navLink"
               class="flex justify-center items-center px-2 border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
               href="#contacts"
               >Contacts</a
@@ -130,7 +138,7 @@
           href="https://www.github.com/mrperrytpx"
           target="_blank"
           rel="no-referrer"
-          class="inline-block dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 md:h-12 md:w-12 w-10"
+          class="inline-block dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 md:h-12 md:w-12 w-12"
         >
           <img
             class="w-full"
@@ -140,7 +148,7 @@
           />
         </a>
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
           target="_blank"
           rel="no-referrer"
           class="inline-block dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
@@ -178,7 +186,7 @@
           />
         </a>
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
           target="_blank"
           rel="no-referrer"
           class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
@@ -377,7 +385,7 @@
               title="zod"
               class="animate-gscale animation-delay-3500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
-              <img class="w-full" src="public/zod.svg" alt="zod SVG" />
+              <img class="w-full" src="public/zod.webp" alt="zod WEBP" />
             </div>
             <p class="text-center self-center">zod</p>
           </div>
@@ -713,7 +721,7 @@
             href="https://garbgarb.vercel.app"
             target="_blank"
             rel="no-referrer"
-            id="projImage"
+            data-id="projImage"
             class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:hover:outline-2 dark:hover:outline dark:hover:outline-slate-500 rounded-lg"
           >
             <img
@@ -753,7 +761,7 @@
             href="https://summonerlookup-production-fe40.up.railway.app/"
             target="_blank"
             rel="no-referrer"
-            id="projImage"
+            data-id="projImage"
             class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:hover:outline-2 dark:hover:outline dark:hover:outline-slate-500 rounded-lg"
           >
             <img
@@ -781,27 +789,27 @@
               on any challenges they may have completed.
             </p>
             <p>
-              It's built using Create React App starter for the frontend with
+              It's built using Create React App starter for the front-end with
               'styled-components' as the styling framework and a Node Express.js
-              server for the backend. It utilizes JWTs for user authorization
+              server for the back-end. It utilizes JWTs for user authorization
               and authentication.
             </p>
           </div>
         </div>
         <div
-          class="grid md:grid-cols-[minmax(0,350px),1fr] py-4 justify-items-center gap-4 md:gap-8"
+          class="grid md:grid-cols-[minmax(0,350px),1fr] py-4 border-b-2 border-amber-100 dark:border-cyan-900/50 justify-items-center gap-4 md:gap-8"
         >
           <a
             href="https://summonerlookup-production-fe40.up.railway.app/"
             target="_blank"
             rel="no-referrer"
-            id="projImage"
+            data-id="projImage"
             class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:hover:outline-2 dark:hover:outline dark:hover:outline-slate-500 rounded-lg"
           >
             <img
               class="rounded-lg"
-              src="public/slup.webp"
-              alt="Garbgarb website preview"
+              src="public/serenity.webp"
+              alt="Serenity Hearth website preview"
             />
             <div
               class="hidden group-hover:grid absolute inset-0 rounded-lg text-3xl text-gray-200 uppercase font-bold bg-black/50 duration-300 transition-all group-hover:items-center group-hover:justify-center"
@@ -813,18 +821,26 @@
             class="flex flex-col gap-4 justify-around max-w-[500px] md:max-w-none"
           >
             <h4 class="text-2xl font-semibold text-center md:text-left">
-              Placeholder
+              Serenity Hearth
             </h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              impedit sequi laboriosam repellat. Numquam quo impedit doloribus
-              sed, voluptatibus optio velit deserunt, dicta odio nemo neque
-              provident molestiae, exercitationem ab.
+              An audio streaming website that allows you to stream an audio of a
+              purring cat next to a crackling fireplace. You can also see the
+              current amount of people streaming the audio. Heavily inspired by
+              <a
+                href="https://rainymood.com/"
+                aria-label="Rainymood"
+                target="_blank"
+                rel="no-referrer"
+                class="underline hover:font-semibold"
+                >Rainymood</a
+              >.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              dignissimos assumenda obcaecati sunt autem. Fuga distinctio soluta
-              quos rem. Vero.
+              It's built using the Next.js framework for the front-end,
+              TailwindCSS as the styling framework and a Node Express.js server
+              for the back-end. It utilizes Socket.io to update the current
+              number of listeners in real time.
             </p>
           </div>
         </div>
@@ -858,7 +874,7 @@
             />
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
             target="_blank"
             rel="no-referrer"
             class="inline-block bg-white dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
@@ -885,7 +901,7 @@
             />
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
             target="_blank"
             rel="no-referrer"
             class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
