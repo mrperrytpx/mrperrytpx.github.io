@@ -52,28 +52,18 @@ const ham2 = document.querySelector("#ham2");
 const ham3 = document.querySelector("#ham3");
 
 function toggleMobileNav() {
-  const openStatus = toggleButton.getAttribute("data-open");
-
-  if (openStatus === "false") {
-    document.body.classList.add("overflow-y-hidden");
-    toggleButton.setAttribute("data-open", true);
-    ham2.classList.add("opacity-0");
-    ham1.classList.add("rotate-45", "translate-x-1");
-    ham3.classList.add("-rotate-45", "translate-x-1");
-  } else {
-    toggleButton.setAttribute("data-open", false);
-    ham2.classList.remove("opacity-0");
-    ham1.classList.remove("rotate-45", "translate-x-1");
-    ham3.classList.remove("-rotate-45", "translate-x-1");
-
-    document.body.classList.remove("overflow-y-hidden");
-  }
+  ham2.classList.toggle("opacity-0");
+  ham1.classList.toggle("rotate-45");
+  ham1.classList.toggle("translate-x-1");
+  ham3.classList.toggle("-rotate-45");
+  ham3.classList.toggle("translate-x-1");
 
   ul.classList.toggle("translate-x-full");
 }
 
 toggleButton.addEventListener("click", () => {
   toggleMobileNav();
+  document.body.classList.toggle("overflow-y-hidden");
 });
 
 const navLinks = document.querySelectorAll("[data-id='navLink']");
@@ -81,5 +71,6 @@ const navLinks = document.querySelectorAll("[data-id='navLink']");
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     toggleMobileNav();
+    document.body.classList.remove("overflow-y-hidden");
   });
 });
