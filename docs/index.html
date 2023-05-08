@@ -13,7 +13,7 @@
     />
 
     <link
-      rel="stylesheet"
+      rel="preconnect"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"
     />
     <title>Tomislav Šiprak</title>
@@ -39,6 +39,7 @@
       >
         <button
           data-open="false"
+          aria-label="Menu button"
           id="toggle"
           type="button"
           class="h-10 w-10 md:hidden inline-block absolute top-3 z-[9999] right-4 rounded-lg"
@@ -102,11 +103,11 @@
     <!--  -->
     <section
       id="top"
-      class="min-h-[80dvh] flex flex-col items-center justify-center gap-4 w-full"
+      class="min-h-[80dvh] p-2 flex flex-col items-center justify-center gap-4 w-full"
     >
       <div class="inline-block dark:hidden w-[150px] h-[150px]">
         <img
-          class="w-full"
+          class="w-[150px] h-[150px]"
           loading="eager"
           src="public/laptop-coding-dark.svg"
           alt="Laptop SVG"
@@ -114,7 +115,7 @@
       </div>
       <div class="hidden dark:inline-block w-[150px] h-[150px]">
         <img
-          class="w-full"
+          class="w-[150px] h-[150px]"
           loading="eager"
           src="public/laptop-coding.svg"
           alt="Laptop SVG"
@@ -133,82 +134,69 @@
         </h1>
         <h2 class="text-lg md:text-2xl">Self-taught Junior Web Developer</h2>
       </div>
-      <div class="flex gap-4 mt-2 items-center justify-center w-full">
+      <div class="flex gap-6 items-center justify-center">
         <a
           href="https://www.github.com/mrperrytpx"
           target="_blank"
           rel="no-referrer"
-          class="inline-block dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 md:h-12 md:w-12 w-12"
-        >
-          <img
-            class="w-full"
+          class="inline-block dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
+          ><img
+            class="w-10 md:h-12 md:w-12"
             loading="eager"
             src="public/github-dark.svg"
             alt="Github SVG"
-          />
-        </a>
+        /></a>
         <a
           href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
           target="_blank"
           rel="no-referrer"
-          class="inline-block dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
-        >
-          <img
-            class="w-full"
+          class="inline-block dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg h-10 w-10 aspect-square md:w-12"
+          ><img
+            class="w-10 aspect-square md:w-12"
             loading="eager"
             src="public/linkedin-dark.svg"
-            alt="LinkedIn SVG"
-          />
-        </a>
+            alt="Github SVG"
+        /></a>
         <a
           href="#contacts"
-          class="inline-block dark:hidden group hover:scale-125 p-1 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
-        >
-          <img
-            class="w-full"
+          class="inline-block dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg h-10 w-10 aspect-square md:w-12"
+          ><img
+            class="w-10 aspect-square md:w-12"
             loading="eager"
-            src="public/envelope-dark.svg"
-            alt="Envelope SVG"
-          />
-        </a>
-
+            src="public/email-dark.svg"
+            alt="Github SVG"
+        /></a>
         <a
           href="https://www.github.com/mrperrytpx"
           target="_blank"
           rel="no-referrer"
-          class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 md:h-12 md:w-12 w-10"
-        >
-          <img
-            class="w-full"
+          class="hidden dark:inline-block group hover:scale-125 transition-transform appearance-none rounded-lg h-10 w-10 aspect-square md:w-12"
+          ><img
+            class="w-10 aspect-square md:w-12"
             loading="eager"
             src="public/github.svg"
             alt="Github SVG"
-          />
-        </a>
+        /></a>
         <a
           href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
           target="_blank"
           rel="no-referrer"
-          class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
-        >
-          <img
-            class="w-full"
+          class="hidden dark:inline-block group hover:scale-125 transition-transform appearance-none rounded-lg h-10 w-10 aspect-square md:w-12"
+          ><img
+            class="w-10 aspect-square md:w-12"
             loading="eager"
             src="public/linkedin.svg"
-            alt="LinkedIn SVG"
-          />
-        </a>
+            alt="Github SVG"
+        /></a>
         <a
           href="#contacts"
-          class="dark:inline-block hidden group hover:scale-125 p-1 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
-        >
-          <img
-            class="w-full"
+          class="hidden dark:inline-block group hover:scale-125 transition-transform appearance-none rounded-lg h-10 w-10 aspect-square md:w-12"
+          ><img
+            class="w-10 aspect-square md:w-12"
             loading="eager"
-            src="public/envelope.svg"
-            alt="Envelope SVG"
-          />
-        </a>
+            src="public/email.svg"
+            alt="Github SVG"
+        /></a>
       </div>
     </section>
 
@@ -293,7 +281,7 @@
               class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/slup/javascript.svg"
                 alt="Javascript SVG"
               />
@@ -308,7 +296,7 @@
               class="animate-gscale animation-delay-1000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/garbgarb/typescript.svg"
                 alt="Typescript SVG"
               />
@@ -323,7 +311,7 @@
               class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/slup/react.svg"
                 alt="React SVG"
               />
@@ -338,7 +326,7 @@
               class="animate-gscale animation-delay-2000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/garbgarb/tailwind.svg"
                 alt="TailwindCSS SVG"
               />
@@ -353,7 +341,7 @@
               class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full"
+                class="w-10 aspect-square"
                 src="public/styled-components.webp"
                 alt="styled-components WEBP"
               />
@@ -371,7 +359,7 @@
               class="animate-gscale animation-delay-3000 grayscale group-hover:!grayscale-0 grid justify-items-end group-hover:scale-125 transition-all w-10 h-10"
             >
               <img
-                class="w-full self-end"
+                class="w-10 self-end aspect-square"
                 src="public/scss.webp"
                 alt="SCSS WEBP"
               />
@@ -385,7 +373,11 @@
               title="zod"
               class="animate-gscale animation-delay-3500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
-              <img class="w-full" src="public/zod.webp" alt="zod WEBP" />
+              <img
+                class="w-10 aspect-square"
+                src="public/zod.webp"
+                alt="zod WEBP"
+              />
             </div>
             <p class="text-center self-center">zod</p>
           </div>
@@ -397,7 +389,7 @@
               class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full"
+                class="w-10 aspect-square"
                 src="public/garbgarb/redux.svg"
                 alt="Redux SVG"
               />
@@ -412,7 +404,7 @@
               class="animate-gscale animation-delay-4500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full"
+                class="w-10 aspect-square"
                 src="public/garbgarb/react-query.svg"
                 alt="Tanstack SVG"
               />
@@ -433,7 +425,7 @@
               class="animate-gscale animation-delay-5000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full"
+                class="w-10 aspect-square"
                 src="public/react-hook-form.svg"
                 alt="React Hook Form SVG"
               />
@@ -450,7 +442,7 @@
               class="animate-gscale animation-delay-5000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full"
+                class="w-10 aspect-square"
                 src="public/react-hook-form-dark.svg"
                 alt="React Hook Form SVG"
               />
@@ -480,7 +472,7 @@
               class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/garbgarb/nextjs.svg"
                 alt="Next.JS SVG"
               />
@@ -497,7 +489,7 @@
               class="animate-gscale animation-delay-500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/garbgarb/nextjs-dark.svg"
                 alt="Next.JS SVG"
               />
@@ -512,7 +504,7 @@
               class="animate-gscale animation-delay-1000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/nodejs.svg"
                 alt="Node.JS SVG"
               />
@@ -529,7 +521,7 @@
               class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/slup/expressjs.svg"
                 alt="Express.JS SVG"
               />
@@ -546,7 +538,7 @@
               class="animate-gscale animation-delay-1500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/slup/expressjs-dark.svg"
                 alt="Express.JS SVG"
               />
@@ -562,7 +554,7 @@
               class="animate-gscale animation-delay-2000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/slup/mongodb.svg"
                 alt="MongoDB SVG"
               />
@@ -579,7 +571,7 @@
               class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/garbgarb/prisma.svg"
                 alt="Prisma ORM SVG"
               />
@@ -596,7 +588,7 @@
               class="animate-gscale animation-delay-2500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/garbgarb/prisma-dark.svg"
                 alt="Prisma ORM SVG"
               />
@@ -612,7 +604,7 @@
               class="animate-gscale animation-delay-3000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/redis.svg"
                 alt="Redis SVG"
               />
@@ -627,7 +619,7 @@
               class="animate-gscale animation-delay-3500 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/garbgarb/nextauth.webp"
                 alt="NextAuth SVG"
               />
@@ -644,7 +636,7 @@
               class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/uhh/jwt.svg"
                 alt="JWT SVG"
               />
@@ -661,7 +653,7 @@
               class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/uhh/jwt-dark.svg"
                 alt="JWT SVG"
               />
@@ -676,7 +668,7 @@
               class="animate-gscale animation-delay-4000 grayscale group-hover:!grayscale-0 group-hover:scale-125 transition-all w-10"
             >
               <img
-                class="w-full aspect-square"
+                class="w-10 aspect-square"
                 src="public/garbgarb/stripe.svg"
                 alt="Stripe SVG"
               />
@@ -864,7 +856,7 @@
             href="https://www.github.com/mrperrytpx"
             target="_blank"
             rel="no-referrer"
-            class="inline-block bg-white dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 md:h-12 md:w-12 w-10"
+            class="inline-block bg-white dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg aspect-square md:w-12 w-10"
           >
             <img
               class="w-full"
@@ -877,7 +869,7 @@
             href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
             target="_blank"
             rel="no-referrer"
-            class="inline-block bg-white dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
+            class="inline-block bg-white dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
           >
             <img
               class="w-full"
@@ -891,10 +883,10 @@
             href="https://www.github.com/mrperrytpx"
             target="_blank"
             rel="no-referrer"
-            class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 md:h-12 md:w-12 w-10"
+            class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg aspect-square md:w-12 w-10"
           >
             <img
-              class="w-full"
+              class="w-10 aspect-square"
               loading="eager"
               src="public/github.svg"
               alt="Github SVG"
@@ -904,10 +896,10 @@
             href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
             target="_blank"
             rel="no-referrer"
-            class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg h-10 w-10 md:h-12 md:w-12"
+            class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
           >
             <img
-              class="w-full"
+              class="w-10 aspect-square"
               loading="eager"
               src="public/linkedin.svg"
               alt="LinkedIn SVG"
