@@ -27,6 +27,7 @@
     <meta name="theme-color" content="#FFFFFF" />
     <meta name="description" content="Tomislav Šiprak's Portfolio website." />
   </head>
+  <!--  -->
   <body
     class="min-h-full relative overflow-x-hidden flex flex-col gap-20 dark:bg-zinc-950 text-gray-800 dark:text-gray-200 scroll-smooth transition-all duration-500"
   >
@@ -35,8 +36,14 @@
     >
       <!-- md: nav -->
       <nav
-        class="w-full relative mx-auto max-w-screen-lg px-2 h-full font-bold"
+        class="w-full flex items-center justify-between relative mx-auto max-w-screen-2xl px-4 2xl:px-0.5  h-full font-bold"
       >
+        <a
+          href="#top"
+          aria-label="Tomislav"
+          class="h-full flex items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+          >&lt;Tomislav /&gt;</a
+        >
         <button
           data-open="false"
           aria-label="Menu button"
@@ -62,37 +69,38 @@
             ></div>
           </div>
         </button>
+        <!--  -->
         <ul
-          class="absolute inset-0 z-[1000] md:static md:h-full translate-x-full md:translate-x-0 md:dark:bg-zinc-950 md:flex-row transition-transform md:justify-start w-full flex flex-col items-center justify-center gap-16 h-[100dvh] bg-amber-50 dark:bg-zinc-900"
+          class="absolute inset-0 z-[1000] md:static md:h-full translate-x-full md:translate-x-0 md:dark:bg-zinc-950 md:flex-row transition-transform md:justify-end flex flex-col items-center justify-center gap-8 h-[100dvh] bg-amber-50 dark:bg-zinc-900"
         >
-          <li>
+          <li class="md:h-full md:flex items-center">
             <a
               data-id="navLink"
-              class="flex justify-center items-center px-2 border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+              class="flex md:h-full justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
               href="#about"
               >About Me</a
             >
           </li>
-          <li>
+          <li class="md:h-full md:flex items-center">
             <a
               data-id="navLink"
-              class="flex justify-center items-center px-2 border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+              class="flex md:h-full justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
               href="#tech"
               >Tech I Use</a
             >
           </li>
-          <li>
+          <li class="md:h-full md:flex items-center">
             <a
               data-id="navLink"
-              class="flex justify-center items-center px-2 border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+              class="flex md:h-full justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
               href="#projects"
               >Projects</a
             >
           </li>
-          <li>
+          <li class="md:h-full md:flex items-center">
             <a
               data-id="navLink"
-              class="flex justify-center items-center px-2 border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+              class="flex md:h-full justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
               href="#contacts"
               >Contacts</a
             >
@@ -103,100 +111,100 @@
     <!--  -->
     <section
       id="top"
-      class="min-h-[80dvh] p-2 flex flex-col items-center justify-center gap-4 w-full"
+      class="min-h-[80dvh] px-4 flex flex-col md:flex-row items-center justify-center gap-8 w-full"
     >
-      <div class="inline-block dark:hidden w-[150px] aspect-square">
+      <div
+        class="w-[min(100%,175px)] md:w-[min(100%,255px)] aspect-square"
+      >
         <img
-          class="w-[150px] aspect-square"
+          class="w-[min(100%,175px)] md:w-[min(100%,255px)] aspect-square rounded-full"
           loading="eager"
-          src="public/laptop-coding-dark.svg"
+          src="public/me.webp"
           alt="Laptop SVG"
         />
       </div>
-      <div class="hidden dark:inline-block w-[150px] aspect-square">
-        <img
-          class="w-[150px] aspect-square"
-          loading="eager"
-          src="public/laptop-coding.svg"
-          alt="Laptop SVG"
-        />
+      
       </div>
-      <div class="text-center space-y-1">
-        <h1
-          class="inline dark:hidden bg-clip-text bg-gradient-to-b from-gray-800 via-amber-400 to-gray-800 text-4xl font-extrabold text-transparent sm:text-6xl"
-        >
-          Tomislav Šiprak
-        </h1>
-        <h1
-          class="dark:inline hidden bg-clip-text bg-gradient-to-br from-gray-200 via-cyan-600 to-gray-200 text-4xl font-extrabold text-transparent sm:text-6xl"
-        >
-          Tomislav Šiprak
-        </h1>
-        <h2 class="text-lg md:text-2xl">Self-taught Junior Web Developer</h2>
-      </div>
-      <div class="flex gap-6 items-center justify-center">
-        <a
-          href="https://www.github.com/mrperrytpx"
-          target="_blank"
-          rel="no-referrer"
-          class="inline-block dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 md:h-12 md:w-12"
-          ><img
-            class="w-10 md:h-12 md:w-12"
-            loading="eager"
-            src="public/github-dark.svg"
-            alt="Github SVG"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
-          target="_blank"
-          rel="no-referrer"
-          class="inline-block dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
-          ><img
-            class="w-10 aspect-square md:w-12"
-            loading="eager"
-            src="public/linkedin-dark.svg"
-            alt="Github SVG"
-        /></a>
-        <a
-          href="#contacts"
-          class="inline-block dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
-          ><img
-            class="w-10 aspect-square md:w-12"
-            loading="eager"
-            src="public/email-dark.svg"
-            alt="Github SVG"
-        /></a>
-        <a
-          href="https://www.github.com/mrperrytpx"
-          target="_blank"
-          rel="no-referrer"
-          class="hidden dark:inline-block group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
-          ><img
-            class="w-10 aspect-square md:w-12"
-            loading="eager"
-            src="public/github.svg"
-            alt="Github SVG"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
-          target="_blank"
-          rel="no-referrer"
-          class="hidden dark:inline-block group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
-          ><img
-            class="w-10 aspect-square md:w-12"
-            loading="eager"
-            src="public/linkedin.svg"
-            alt="Github SVG"
-        /></a>
-        <a
-          href="#contacts"
-          class="hidden dark:inline-block group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
-          ><img
-            class="w-10 aspect-square md:w-12"
-            loading="eager"
-            src="public/email.svg"
-            alt="Github SVG"
-        /></a>
+      <div class="flex flex-col gap-4">
+        <div class="text-center space-y-2">
+          <h1
+            class="inline dark:hidden bg-clip-text bg-gradient-to-b from-gray-800 via-amber-400 to-gray-800 text-4xl font-extrabold text-transparent sm:text-5xl"
+          >
+            Tomislav Šiprak
+          </h1>
+          <h1
+            class="dark:inline hidden bg-clip-text bg-gradient-to-br from-gray-200 via-cyan-600 to-gray-200 text-4xl font-extrabold text-transparent sm:text-5xl"
+          >
+            Tomislav Šiprak
+          </h1>
+          <h2 class="text-lg lg:text-right md:text-xl">
+            Self-taught Junior Web Developer
+          </h2>
+        </div>
+        <div class="flex gap-6 items-center lg:justify-end justify-center">
+          <a
+            href="https://www.github.com/mrperrytpx"
+            target="_blank"
+            rel="no-referrer"
+            class="inline-block dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 md:h-12 md:w-12"
+            ><img
+              class="w-10 md:h-12 md:w-12"
+              loading="eager"
+              src="public/github-dark.svg"
+              alt="Github SVG"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
+            target="_blank"
+            rel="no-referrer"
+            class="inline-block dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
+            ><img
+              class="w-10 aspect-square md:w-12"
+              loading="eager"
+              src="public/linkedin-dark.svg"
+              alt="Github SVG"
+          /></a>
+          <a
+            href="#contacts"
+            class="inline-block dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
+            ><img
+              class="w-10 aspect-square md:w-12"
+              loading="eager"
+              src="public/email-dark.svg"
+              alt="Github SVG"
+          /></a>
+          <a
+            href="https://www.github.com/mrperrytpx"
+            target="_blank"
+            rel="no-referrer"
+            class="hidden dark:inline-block group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
+            ><img
+              class="w-10 aspect-square md:w-12"
+              loading="eager"
+              src="public/github.svg"
+              alt="Github SVG"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/tomislav-%C5%A1iprak-83abb1275/"
+            target="_blank"
+            rel="no-referrer"
+            class="hidden dark:inline-block group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
+            ><img
+              class="w-10 aspect-square md:w-12"
+              loading="eager"
+              src="public/linkedin.svg"
+              alt="Github SVG"
+          /></a>
+          <a
+            href="#contacts"
+            class="hidden dark:inline-block group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
+            ><img
+              class="w-10 aspect-square md:w-12"
+              loading="eager"
+              src="public/email.svg"
+              alt="Github SVG"
+          /></a>
+        </div>
       </div>
     </section>
 
@@ -272,7 +280,7 @@
           Client-side technologies I have experience with:
         </p>
         <div
-          class="text-xs flex gap-4 items-center justify-center md:justify-start flex-wrap w-full"
+          class="text-xs flex gap-4 items-center font-medium justify-center md:justify-start flex-wrap w-full"
         >
           <div class="grid grid-rows-2 gap-2 group justify-items-center">
             <div
@@ -460,7 +468,7 @@
           Server-side technologies I have experience with:
         </p>
         <div
-          class="text-xs flex items-center justify-center md:justify-start gap-8 flex-wrap w-full"
+          class="text-xs flex font-medium items-center justify-center md:justify-start gap-8 flex-wrap w-full"
         >
           <!-- light mode nextjs -->
           <div
@@ -683,16 +691,16 @@
         class="rounded-lg mb-10 shadow-md dark:shadow-cyan-900/50 dark:bg-cyan-900/50 shadow-amber-50 bg-amber-50 p-4 w-full flex flex-col gap-4 items-start justify-center"
       >
         <p class="text-sm font-semibold">Other tooling:</p>
-        <div class="text-sm flex gap-2 flex-wrap w-full">
-          <span>git+Github</span>
-          <span>Railway</span>
-          <span>Planetscale</span>
-          <span>MongoDB Atlas</span>
-          <span>Swagger</span>
-          <span>Figma</span>
-          <span>Prettier</span>
-          <span>Postman</span>
-          <span>Vercel</span>
+        <div class="text-sm font-medium flex gap-2 flex-wrap w-full">
+          <span>git+Github |</span>
+          <span>Railway |</span>
+          <span>Planetscale |</span>
+          <span>MongoDB Atlas |</span>
+          <span>Swagger |</span>
+          <span>Figma |</span>
+          <span>Prettier |</span>
+          <span>Postman |</span>
+          <span>Vercel |</span>
           <span>Stripe</span>
         </div>
       </article>
@@ -706,18 +714,18 @@
         My Projects
       </h3>
       <div class="w-full mb-10 p-4 space-y-12">
-        <div
-          class="grid md:grid-cols-[minmax(0,350px),1fr] py-4 border-b-2 border-amber-100 dark:border-cyan-900/50 justify-items-center gap-4 md:gap-8"
+        <article
+          class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-amber-100/50 dark:border-cyan-900/25 justify-items-center gap-8"
         >
           <a
             href="https://garbgarb.vercel.app"
             target="_blank"
             rel="no-referrer"
             data-id="projImage"
-            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:hover:outline-2 dark:hover:outline dark:hover:outline-slate-500 rounded-lg"
+            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-gray-100/25 dark:outline dark:outline-1 dark:hover:outline-2  dark:hover:outline-slate-500  rounded-lg"
           >
             <img
-              class="rounded-lg"
+              class="w-[min(100%,500px)] rounded-lg aspect-video"
               src="public/garbgarb.webp"
               alt="Garbgarb website preview"
             />
@@ -728,7 +736,7 @@
             </div>
           </a>
           <div
-            class="flex flex-col gap-4 justify-around max-w-[500px] md:max-w-none"
+            class="flex text-sm flex-col gap-4 justify-around max-w-[500px] md:max-w-none"
           >
             <h4 class="text-2xl font-semibold text-center md:text-left">
               GarbGarb
@@ -744,21 +752,21 @@
               process payments and NextAuth for user authentication.
             </p>
           </div>
-        </div>
+        </article>
         <!--  -->
-        <div
-          class="grid md:grid-cols-[minmax(0,350px),1fr] py-4 border-b-2 border-amber-100 dark:border-cyan-900/50 justify-items-center gap-4 md:gap-8"
+        <article
+        class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-amber-100/50 dark:border-cyan-900/25 justify-items-center gap-8"
         >
           <a
             href="https://summonerlookup-production-fe40.up.railway.app/"
             target="_blank"
             rel="no-referrer"
             data-id="projImage"
-            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:hover:outline-2 dark:hover:outline dark:hover:outline-slate-500 rounded-lg"
+            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-gray-100/25 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500  rounded-lg"
           >
             <img
-              class="rounded-lg"
-              src="public/slup.webp"
+            class="w-[min(100%,500px)] rounded-lg aspect-video"
+            src="public/slup.webp"
               alt="Garbgarb website preview"
             />
             <div
@@ -768,7 +776,7 @@
             </div>
           </a>
           <div
-            class="flex flex-col gap-4 justify-around max-w-[500px] md:max-w-none"
+            class="flex text-sm flex-col gap-4 justify-around max-w-[500px] md:max-w-none"
           >
             <h4 class="text-2xl font-semibold text-center md:text-left">
               Summoner Lookup
@@ -787,20 +795,21 @@
               and authentication.
             </p>
           </div>
-        </div>
-        <div
-          class="grid md:grid-cols-[minmax(0,350px),1fr] py-4 border-b-2 border-amber-100 dark:border-cyan-900/50 justify-items-center gap-4 md:gap-8"
+        </article>
+        <!--  -->
+        <article
+        class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-amber-100/50 dark:border-cyan-900/25 justify-items-center gap-8"
         >
           <a
-            href="https://summonerlookup-production-fe40.up.railway.app/"
+            href="https://serenity-hearth.vercel.app/"
             target="_blank"
             rel="no-referrer"
             data-id="projImage"
-            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:hover:outline-2 dark:hover:outline dark:hover:outline-slate-500 rounded-lg"
+            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-gray-100/25 dark:outline dark:outline-1 dark:hover:outline-2  dark:hover:outline-slate-500 rounded-lg"
           >
             <img
-              class="rounded-lg"
-              src="public/serenity.webp"
+            class="w-[min(100%,500px)] rounded-lg aspect-video object-cover"
+            src="public/serenity.webp"
               alt="Serenity Hearth website preview"
             />
             <div
@@ -810,7 +819,7 @@
             </div>
           </a>
           <div
-            class="flex flex-col gap-4 justify-around max-w-[500px] md:max-w-none"
+            class="flex text-sm flex-col gap-4 justify-around max-w-[500px] md:max-w-none"
           >
             <h4 class="text-2xl font-semibold text-center md:text-left">
               Serenity Hearth
@@ -818,7 +827,7 @@
             <p>
               An audio streaming website that allows you to stream an audio of a
               purring cat next to a crackling fireplace. You can also see the
-              current amount of people streaming the audio. Heavily inspired by
+              current amount of people streaming the audio. Inspired by
               <a
                 href="https://rainymood.com/"
                 aria-label="Rainymood"
@@ -832,10 +841,10 @@
               It's built using the Next.js framework for the front-end,
               TailwindCSS as the styling framework and a Node Express.js server
               for the back-end. It utilizes Socket.io to update the current
-              number of listeners in real time.
+              number of listeners in real time via websockets.
             </p>
           </div>
-        </div>
+        </article>
       </div>
       <!--  -->
     </section>
@@ -955,6 +964,7 @@
         </form>
       </div>
     </section>
+
     <section
       id="contacts"
       class="w-full max-w-screen-lg mx-auto flex justify-center px-4 py-8"
