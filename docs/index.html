@@ -29,19 +29,19 @@
   </head>
   <!--  -->
   <body
-    class="min-h-full relative overflow-x-hidden flex flex-col gap-20 dark:bg-zinc-950 text-gray-800 dark:text-gray-200 scroll-smooth transition-all duration-500"
+    class="min-h-full relative overflow-x-hidden flex flex-col gap-16 bg-neutral-100 dark:bg-zinc-950 text-gray-800 dark:text-gray-200 scroll-smooth transition-all duration-500"
   >
     <header
-      class="fixed z-50 top-0 h-16 left-0 right-0 bg-amber-50 dark:bg-zinc-950 dark:text-gray-200 shadow-sm flex items-center border-b border-slate-100 dark:border-cyan-950"
+      class="fixed z-50 top-0 h-16 left-0 right-0 bg-indigo-500 dark:bg-zinc-950 text-gray-100 shadow-sm flex items-center border-b border-slate-100 dark:border-cyan-950"
     >
       <!-- md: nav -->
       <nav
-        class="w-full flex items-center justify-between relative mx-auto max-w-screen-2xl px-4 2xl:px-0.5  h-full font-bold"
+        class="w-full flex items-center justify-between relative mx-auto max-w-screen-2xl px-4 2xl:px-0.5 h-full font-bold"
       >
         <a
           href="#top"
           aria-label="Tomislav"
-          class="h-full flex items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+          class="flex items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-white"
           >&lt;Tomislav /&gt;</a
         >
         <button
@@ -57,50 +57,47 @@
           >
             <div
               id="ham1"
-              class="w-full h-0.5 rounded-lg origin-bottom-left transition-transform bg-black dark:bg-white"
+              class="w-full h-0.5 rounded-lg origin-bottom-left transition-transform bg-white"
             ></div>
-            <div
-              id="ham2"
-              class="w-full h-0.5 transition-all bg-black dark:bg-white"
-            ></div>
+            <div id="ham2" class="w-full h-0.5 transition-all bg-white"></div>
             <div
               id="ham3"
-              class="w-full h-0.5 rounded-lg origin-top-left transition-transform bg-black dark:bg-white"
+              class="w-full h-0.5 rounded-lg origin-top-left transition-transform bg-white"
             ></div>
           </div>
         </button>
         <!--  -->
         <ul
-          class="absolute inset-0 z-[1000] md:static md:h-full translate-x-full md:translate-x-0 md:dark:bg-zinc-950 md:flex-row transition-transform md:justify-end flex flex-col items-center justify-center gap-8 h-[100dvh] bg-amber-50 dark:bg-zinc-900"
+          class="absolute inset-0 z-[1000] md:static md:h-full translate-x-full md:translate-x-0 md:dark:bg-zinc-950 md:flex-row transition-transform md:justify-end flex flex-col items-center justify-center gap-8 h-[100dvh] bg-indigo-500 dark:bg-zinc-900"
         >
-          <li class="md:h-full md:flex items-center">
+          <li class="md:flex items-center">
             <a
               data-id="navLink"
-              class="flex md:h-full justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+              class="px-2 flex justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-white"
               href="#about"
               >About Me</a
             >
           </li>
-          <li class="md:h-full md:flex items-center">
+          <li class="md:flex items-center">
             <a
               data-id="navLink"
-              class="flex md:h-full justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+              class="px-2 flex justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-white"
               href="#tech"
               >Tech I Use</a
             >
           </li>
-          <li class="md:h-full md:flex items-center">
+          <li class="md:flex items-center">
             <a
               data-id="navLink"
-              class="flex md:h-full justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+              class="px-2 flex justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-white"
               href="#projects"
               >Projects</a
             >
           </li>
-          <li class="md:h-full md:flex items-center">
+          <li class="md:flex items-center">
             <a
               data-id="navLink"
-              class="flex md:h-full justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-black"
+              class="px-2 flex justify-center items-center border-b-2 border-transparent dark:hover:border-cyan-500 hover:border-white"
               href="#contacts"
               >Contacts</a
             >
@@ -111,31 +108,21 @@
     <!--  -->
     <section
       id="top"
-      class="min-h-[80dvh] px-4 flex flex-col md:flex-row items-center justify-center gap-8 w-full"
+      class="min-h-[82dvh] px-4 flex flex-col md:flex-row items-center justify-center gap-8 w-full"
     >
-      <div
-        class="w-[min(100%,175px)] md:w-[min(100%,255px)] aspect-square"
-      >
+      <div class="w-[min(100%,175px)] md:w-[min(100%,255px)] aspect-square">
         <img
-          class="w-[min(100%,175px)] md:w-[min(100%,255px)] aspect-square rounded-full"
+          class="w-[min(100%,175px)] md:w-[min(100%,255px)] shadow-sm aspect-square rounded-full"
           loading="eager"
           src="public/me.webp"
           alt="Laptop SVG"
         />
       </div>
-      
-      </div>
+
       <div class="flex flex-col gap-4">
         <div class="text-center space-y-2">
-          <h1
-            class="inline dark:hidden bg-clip-text bg-gradient-to-b from-gray-800 via-amber-400 to-gray-800 text-4xl font-extrabold text-transparent sm:text-5xl"
-          >
-            Tomislav Šiprak
-          </h1>
-          <h1
-            class="dark:inline hidden bg-clip-text bg-gradient-to-br from-gray-200 via-cyan-600 to-gray-200 text-4xl font-extrabold text-transparent sm:text-5xl"
-          >
-            Tomislav Šiprak
+          <h1 class="text-4xl font-semibold sm:text-5xl">
+            <span class="text-indigo-500">Tomislav</span> Šiprak
           </h1>
           <h2 class="text-lg lg:text-right md:text-xl">
             Self-taught Junior Web Developer
@@ -150,7 +137,7 @@
             ><img
               class="w-10 md:h-12 md:w-12"
               loading="eager"
-              src="public/github-dark.svg"
+              src="public/github-purple.svg"
               alt="Github SVG"
           /></a>
           <a
@@ -209,58 +196,25 @@
     </section>
 
     <div
-      class="rounded-2xl p-4 shadow-lg dark:shadow-cyan-950/20 shadow-amber-50 dark:bg-cyan-900/20 bg-amber-50 w-full max-w-screen-2xl mx-auto space-y-8"
+      class="rounded-2xl p-4 shadow-lg dark:shadow-cyan-950/20 dark:bg-cyan-900/20 bg-white w-full max-w-screen-2xl mx-auto space-y-8 mb-20"
     >
       <section
         id="about"
         class="w-full overflow-x-hidden mx-auto max-w-screen-lg my-8 flex flex-col space-y-8"
       >
-        <h3 class="font-bold text-center md:text-left text-3xl">About me</h3>
-        <p
-          id="pg"
-          class="opacity-0 translate-x-16 transition-all duration-500 max-w-screen-sm self-center text-center"
-        >
-          👋 Hello! My name is Tomislav and I am a self-taught junior level web
-          developer from Croatia with a strong passion for front-end
-          development. My current focus is working with React and Next.js, but
-          I'm always open to trying out other technologies.
-        </p>
-
-        <p
-          id="pg"
-          class="opacity-0 -translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-start text-center md:text-left"
-        >
-          I have proficiency in HTML, CSS, JavaScript and TypeScript, as well as
-          experience working with various front-end libraries, including React
-          Hook Form, Redux Toolkit, Tanstack Query/Table and TailwindCSS.
-          Furthermore, I have expertise in using back-end technologies such as
-          Node.js, Express.js, and MongoDB.
-        </p>
-        <p
-          id="pg"
-          class="opacity-0 translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-end text-center md:text-left"
-        >
-          I possess a well-rounded understanding of REST APIs and the associated
-          concepts. I have hands-on experience with RESTful architecture and
-          have worked extensively with APIs to build my projects.
-        </p>
-        <p
-          id="pg"
-          class="opacity-0 -translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-start text-center md:text-left"
-        >
-          I am a self-motivated and detail-oriented developer who thrives in a
-          fast-paced and collaborative environment. I enjoy working with a team
-          of developers to solve complex problems and create innovative
-          solutions.
-        </p>
-        <p
-          id="pg"
-          class="opacity-0 translate-x-16 transition-all duration-500 max-w-screen-sm self-center md:self-end text-center md:text-left"
-        >
-          My portfolio showcases my expertise in creating responsive and
-          user-friendly web applications that deliver great user experiences. I
-          am constantly exploring new technologies and techniques to improve my
-          skills and stay up-to-date with the latest trends in the industry.
+        <h3 class="font-bold text-center text-indigo-500 md:text-left text-3xl">
+          About me
+        </h3>
+        <p class="md:text-lg transition-all duration-500">
+          👋 Hi, I'm Tomislav, a self-taught web developer from Croatia with a
+          passion for front-end development. I specialize in React and Next.js
+          but am always open to new technologies. I'm proficient in HTML, CSS,
+          JavaScript, TypeScript, and have experience with various front-end
+          libraries. I also have expertise in back-end technologies like
+          Node.js, Express.js, and MongoDB, and a strong understanding of REST
+          APIs. I'm a self-motivated and detail-oriented developer who enjoys
+          working collaboratively to solve complex problems and create
+          innovative solutions. Check out my portfolio for examples of my work.
         </p>
       </section>
     </div>
@@ -269,12 +223,14 @@
       id="tech"
       class="w-full mx-auto max-w-screen-lg flex flex-col gap-8"
     >
-      <h3 class="font-bold md:pl-4 text-center md:text-left text-3xl">
+      <h3
+        class="font-bold md:pl-4 text-indigo-500 text-center md:text-left text-3xl"
+      >
         Tech I Use
       </h3>
       <!-- Client Side -->
       <article
-        class="rounded-lg shadow-md dark:shadow-cyan-900/50 dark:bg-cyan-900/50 shadow-amber-50 bg-amber-50 p-4 w-full flex flex-col gap-4 items-start justify-center"
+        class="rounded-lg shadow-md dark:shadow-cyan-900/50 dark:bg-cyan-900/50 bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
       >
         <p class="text-sm font-semibold">
           Client-side technologies I have experience with:
@@ -462,7 +418,7 @@
 
       <!-- Server-side -->
       <article
-        class="rounded-lg shadow-md dark:shadow-cyan-900/50 dark:bg-cyan-900/50 shadow-amber-50 bg-amber-50 p-4 w-full flex flex-col gap-4 items-start justify-center"
+        class="rounded-lg shadow-md dark:shadow-cyan-900/50 dark:bg-cyan-900/50 bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
       >
         <p class="text-sm font-semibold">
           Server-side technologies I have experience with:
@@ -688,7 +644,7 @@
 
       <!-- Other -->
       <article
-        class="rounded-lg mb-10 shadow-md dark:shadow-cyan-900/50 dark:bg-cyan-900/50 shadow-amber-50 bg-amber-50 p-4 w-full flex flex-col gap-4 items-start justify-center"
+        class="rounded-lg mb-10 shadow-md dark:shadow-cyan-900/50 dark:bg-cyan-900/50 bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
       >
         <p class="text-sm font-semibold">Other tooling:</p>
         <div class="text-sm font-medium flex gap-2 flex-wrap w-full">
@@ -710,10 +666,12 @@
       id="projects"
       class="w-full mx-auto max-w-screen-lg flex flex-col gap-8"
     >
-      <h3 class="font-bold text-center md:text-left text-3xl pl-4">
+      <h3
+        class="font-bold md:pl-4 text-indigo-500 text-center md:text-left text-3xl"
+      >
         My Projects
       </h3>
-      <div class="w-full mb-10 p-4 space-y-12">
+      <div class="w-full mb-10 space-y-6 px-4 md:px-0">
         <article
           class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-amber-100/50 dark:border-cyan-900/25 justify-items-center gap-8"
         >
@@ -722,7 +680,7 @@
             target="_blank"
             rel="no-referrer"
             data-id="projImage"
-            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-gray-100/25 dark:outline dark:outline-1 dark:hover:outline-2  dark:hover:outline-slate-500  rounded-lg"
+            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-gray-100/25 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
           >
             <img
               class="w-[min(100%,500px)] rounded-lg aspect-video"
@@ -755,18 +713,18 @@
         </article>
         <!--  -->
         <article
-        class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-amber-100/50 dark:border-cyan-900/25 justify-items-center gap-8"
+          class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-amber-100/50 dark:border-cyan-900/25 justify-items-center gap-8"
         >
           <a
             href="https://summonerlookup-production-fe40.up.railway.app/"
             target="_blank"
             rel="no-referrer"
             data-id="projImage"
-            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-gray-100/25 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500  rounded-lg"
+            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-gray-100/25 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
           >
             <img
-            class="w-[min(100%,500px)] rounded-lg aspect-video"
-            src="public/slup.webp"
+              class="w-[min(100%,500px)] rounded-lg aspect-video"
+              src="public/slup.webp"
               alt="Garbgarb website preview"
             />
             <div
@@ -798,18 +756,18 @@
         </article>
         <!--  -->
         <article
-        class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-amber-100/50 dark:border-cyan-900/25 justify-items-center gap-8"
+          class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-amber-100/50 dark:border-cyan-900/25 justify-items-center gap-8"
         >
           <a
             href="https://serenity-hearth.vercel.app/"
             target="_blank"
             rel="no-referrer"
             data-id="projImage"
-            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-gray-100/25 dark:outline dark:outline-1 dark:hover:outline-2  dark:hover:outline-slate-500 rounded-lg"
+            class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-gray-100/25 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
           >
             <img
-            class="w-[min(100%,500px)] rounded-lg aspect-video object-cover"
-            src="public/serenity.webp"
+              class="w-[min(100%,500px)] rounded-lg aspect-video object-cover"
+              src="public/serenity.webp"
               alt="Serenity Hearth website preview"
             />
             <div
@@ -833,7 +791,7 @@
                 aria-label="Rainymood"
                 target="_blank"
                 rel="no-referrer"
-                class="underline hover:font-semibold"
+                class="underline text-indigo-500 hover:font-semibold"
                 >Rainymood</a
               >.
             </p>
@@ -851,9 +809,11 @@
 
     <section
       id="contacts"
-      class="w-full max-w-screen-lg mx-auto flex flex-col p-4 gap-8 rounded-lg shadow-lg shadow-amber-50 bg-amber-50 dark:bg-cyan-900/20 dark:shadow-cyan-950/20"
+      class="w-full max-w-screen-lg mx-auto flex flex-col p-4 gap-8 rounded-lg shadow-lg bg-white dark:bg-cyan-900/20 dark:shadow-cyan-950/20"
     >
-      <h3 class="font-bold text-3xl">Contacts</h3>
+      <h3 class="font-bold text-indigo-500 text-center md:text-left text-3xl">
+        Contacts
+      </h3>
       <div class="flex flex-col gap-10 h-full max-w-screen-lg">
         <p class="text-center sm:text-start">
           Please feel free to contact me at any time using any of the methods
@@ -926,7 +886,7 @@
               <label class="group font-semibold flex flex-col">
                 Your name:
                 <input
-                  class="h-10 dark:bg-gray-200 bg-slate-50 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
+                  class="h-10 dark:bg-gray-200 bg-slate-50 focus:outline-indigo-500 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
                   required
                   placeholder="Name*"
                   type="name"
@@ -936,7 +896,7 @@
               <label class="group font-semibold flex flex-col">
                 Your email:
                 <input
-                  class="h-10 dark:bg-gray-200 bg-slate-50 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
+                  class="h-10 dark:bg-gray-200 bg-slate-50 focus:outline-indigo-500 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
                   required
                   placeholder="Email*"
                   type="email"
@@ -949,14 +909,14 @@
               <textarea
                 required
                 placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                class="h-32 dark:bg-gray-200 bg-slate-50 focus:bg-white text-sm shadow-sm rounded-lg text-black p-2 md:h-full w-full"
+                class="h-32 dark:bg-gray-200 bg-slate-50 focus:outline-indigo-500 focus:bg-white text-sm shadow-sm rounded-lg text-black p-2 md:h-full w-full"
                 name="message"
               ></textarea>
             </label>
           </div>
           <!-- your other form fields go here -->
           <button
-            class="p-2 text-black sm:max-w-[240px] self-start focus:bg-white hover:bg-white shadow-sm bg-slate-50 dark:bg-gray-200 md:self-end w-full rounded-lg font-semibold"
+            class="p-2 text-white bg-indigo-500 sm:max-w-[240px] self-start hover:text-gray-800 focus:text-gray-800 hover:border-indigo-500 border-2 border-white transition-all duration-75 focus:bg-indigo-100 hover:bg-indigo-100 shadow-sm dark:bg-gray-200 md:self-end w-full rounded-lg font-semibold"
             type="submit"
           >
             Send
@@ -969,7 +929,11 @@
       id="contacts"
       class="w-full max-w-screen-lg mx-auto flex justify-center px-4 py-8"
     >
-      <a href="#top" class="mx-auto hover:underline text-sm">Back to top ↑</a>
+      <a
+        href="#top"
+        class="mx-auto hover:underline text-indigo-500 font-bold text-sm"
+        >Back to top ↑</a
+      >
     </section>
   </body>
 </html>
