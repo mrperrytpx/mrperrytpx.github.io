@@ -22,27 +22,7 @@ window
     }
   });
 
-// // Paragraph observer
-const paragraphs = document.querySelectorAll("#pg");
-
-const pgOptions = {
-  rootMargin: `-25px 0px`,
-  threshold: 0.1,
-};
-
-const pgObserver = new IntersectionObserver((entries, _observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.remove("opacity-0");
-      entry.target.classList.remove("translate-x-16");
-      entry.target.classList.remove("-translate-x-16");
-    }
-  });
-}, pgOptions);
-
-paragraphs.forEach((pg) => pgObserver.observe(pg));
-
-// //
+//
 
 const toggleButton = document.querySelector("#toggle");
 const ul = document.querySelector("ul");
