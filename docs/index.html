@@ -11,7 +11,6 @@
             type="image/svg+xml"
             href="public/laptop-coding-dark.svg"
         />
-
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"
@@ -25,6 +24,7 @@
             content="Tomislav Šiprak's Portfolio website."
         />
         <meta name="theme-color" content="#FFFFFF" />
+        <meta property="og:site_name" content="Tomislav Šiprak" />
         <meta
             name="description"
             content="Tomislav Šiprak's Portfolio website."
@@ -35,7 +35,7 @@
         class="min-h-full relative overflow-x-hidden flex flex-col gap-16 bg-neutral-100 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 scroll-smooth transition-all duration-500"
     >
         <header
-            class="fixed z-50 top-0 h-16 left-0 right-0 bg-indigo-500 dark:bg-zinc-950 text-gray-100 shadow-sm flex items-center border-b border-slate-100 dark:border-indigo-400"
+            class="fixed z-50 top-0 h-16 left-0 right-0 bg-indigo-600 dark:bg-zinc-950 text-gray-100 shadow-sm flex items-center border-b border-slate-100 dark:border-indigo-400"
         >
             <!-- md: nav -->
             <nav
@@ -74,7 +74,7 @@
                 </button>
                 <!--  -->
                 <ul
-                    class="absolute inset-0 z-[1000] md:static md:h-full translate-x-full md:translate-x-0 md:dark:bg-zinc-950 md:flex-row transition-transform md:justify-end flex flex-col items-center justify-center gap-8 h-[100dvh] bg-indigo-500 dark:bg-zinc-900"
+                    class="absolute inset-0 z-[1000] md:static md:h-full translate-x-full md:translate-x-0 md:dark:bg-zinc-950 md:flex-row transition-transform md:justify-end flex flex-col items-center justify-center gap-8 h-[100dvh] bg-indigo-600 dark:bg-zinc-900"
                 >
                     <li class="md:flex items-center">
                         <a
@@ -130,7 +130,7 @@
             <div class="flex flex-col gap-4">
                 <div class="text-center space-y-2">
                     <h1 class="text-4xl font-semibold sm:text-5xl">
-                        <span class="text-indigo-500 dark:text-indigo-400"
+                        <span class="text-indigo-600 dark:text-indigo-400"
                             >Tomislav</span
                         >
                         Šiprak
@@ -147,94 +147,107 @@
                         target="_blank"
                         rel="no-referrer"
                         class="dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 md:h-12 md:w-12"
-                        ><img
-                            class="w-10 md:h-12 md:w-12"
+                    >
+                        <img
+                            class="w-full aspect-square"
                             loading="eager"
                             src="public/github-purple.svg"
                             alt="Github SVG"
-                    /></a>
+                        />
+                    </a>
                     <a
                         href="https://www.linkedin.com/in/tomislav-siprak"
                         target="_blank"
                         rel="no-referrer"
-                        class="dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
-                        ><img
-                            class="w-10 aspect-square md:w-12"
+                        class="dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 md:w-12"
+                    >
+                        <img
+                            class="w-full aspect-square"
                             loading="eager"
                             src="public/linkedin-dark.svg"
                             alt="LinkedIn SVG"
-                    /></a>
+                        />
+                    </a>
                     <a
                         href="#contacts"
-                        class="dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
-                        ><img
-                            class="w-10 aspect-square md:w-12"
+                        class="dark:hidden group hover:scale-125 transition-transform appearance-none rounded-lg w-10 md:w-12"
+                    >
+                        <img
+                            class="w-full aspect-square"
                             loading="eager"
                             src="public/email-purple.svg"
                             alt="Email SVG"
-                    /></a>
+                        />
+                    </a>
                     <a
                         href="https://www.github.com/mrperrytpx"
                         target="_blank"
                         rel="no-referrer"
-                        class="hidden dark:inline-block group hover:scale-125 transition-transform bg-black rounded-full appearance-none w-10 aspect-square md:w-12"
-                        ><img
-                            class="w-10 aspect-square md:w-12"
+                        class="hidden dark:inline-block group hover:scale-125 transition-transform bg-black rounded-full appearance-none w-10 md:w-12"
+                    >
+                        <img
+                            class="w-full aspect-square"
                             loading="eager"
                             src="public/github-indigo.svg"
                             alt="Github SVG"
-                    /></a>
+                        />
+                    </a>
                     <!--  -->
                     <a
                         href="https://www.linkedin.com/in/tomislav-siprak"
                         target="_blank"
                         rel="no-referrer"
-                        class="hidden dark:inline-block group hover:scale-125 transition-transform rounded-full appearance-none w-10 aspect-square md:w-12"
-                        ><img
-                            class="w-10 aspect-square md:w-12"
+                        class="hidden dark:inline-block group hover:scale-125 transition-transform rounded-full appearance-none w-10 md:w-12"
+                    >
+                        <img
+                            class="w-full aspect-square"
                             loading="eager"
                             src="public/linkedin.svg"
                             alt="LinkedIn SVG"
-                    /></a>
+                        />
+                    </a>
                     <!--  -->
                     <a
                         href="#contacts"
-                        class="hidden dark:inline-block group hover:scale-125 transition-transform bg-black rounded-full appearance-none w-10 aspect-square md:w-12"
-                        ><img
-                            class="w-10 aspect-square md:w-12"
+                        class="hidden dark:inline-block group hover:scale-125 transition-transform bg-black rounded-full appearance-none w-10 md:w-12"
+                    >
+                        <img
+                            class="w-full aspect-square"
                             loading="eager"
                             src="public/email-indigo.svg"
                             alt="Email SVG"
-                    /></a>
+                        />
+                    </a>
                 </div>
             </div>
         </section>
 
         <div
-            class="rounded-2xl p-4 shadow-md bg-white dark:bg-black w-full max-w-screen-2xl mx-auto space-y-8 mb-20"
+            class="lg:rounded-2xl p-4 shadow-md bg-white dark:bg-black w-full max-w-screen-2xl mx-auto space-y-8 mb-20"
         >
             <section
                 id="about"
                 class="w-full overflow-x-hidden mx-auto max-w-screen-lg my-8 flex flex-col space-y-8"
             >
                 <h3
-                    class="font-bold md:pl-4 text-center dark:text-indigo-400 text-indigo-500 md:text-left text-3xl"
+                    class="font-bold md:pl-4 text-center dark:text-indigo-400 text-indigo-600 md:text-left text-3xl"
                 >
                     About me
                 </h3>
                 <p class="md:text-lg transition-all duration-500">
                     👋 Hi, I'm Tomislav, a self-taught web developer from
-                    Croatia with a passion for front-end development. I
-                    specialize in React and Next.js, but I am always open to
-                    trying out other frameworks. I'm proficient in Typescript,
-                    HTML and CSS, and I have experience with various front-end
-                    libraries, such as Redux Toolkit, Tanstack Query/Table,
-                    TailwindCSS etc. I am familiar with some back-end
-                    technologies like Node.js, Express.js and MongoDB, and I
-                    have a strong understanding of REST APIs. I am a
-                    self-motivated and detail-oriented developer who enjoys
-                    solving complex problems and I am excited to work alongside
-                    other like-minded people.
+                    Croatia. I currently specialize in React and Next.js. I'm
+                    proficient in Typescript, HTML and CSS and I have experience
+                    with various front-end libraries, such as Redux Toolkit,
+                    Tanstack Query/Table, TailwindCSS etc. I am familiar with
+                    some back-end technologies like Node.js, Express.js and
+                    Prisma ORM, and I have a strong understanding of REST APIs.
+                </p>
+                <p class="md:text-lg transition-all duration-500">
+                    I am a self-motivated and detail-oriented developer who
+                    enjoys solving complex problems and I am excited to break
+                    into the industry and work alongside other like-minded
+                    people.
                 </p>
             </section>
         </div>
@@ -244,13 +257,13 @@
             class="w-full mx-auto max-w-screen-lg flex flex-col gap-8"
         >
             <h3
-                class="font-bold md:pl-4 dark:text-indigo-400 text-indigo-500 text-center md:text-left text-3xl"
+                class="font-bold md:pl-4 dark:text-indigo-400 text-indigo-600 text-center md:text-left text-3xl"
             >
                 Tech I Use
             </h3>
             <!-- Client Side -->
             <article
-                class="rounded-lg dark:bg-black shadow-md bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
+                class="lg:rounded-lg dark:bg-black shadow-md bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
             >
                 <p
                     class="text-sm text-center sm:text-left w-full font-semibold"
@@ -269,7 +282,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/slup/javascript.svg"
+                                src="public/javascript.svg"
                                 alt="Javascript SVG"
                             />
                         </div>
@@ -285,7 +298,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/typescript.svg"
+                                src="public/typescript.svg"
                                 alt="Typescript SVG"
                             />
                         </div>
@@ -301,7 +314,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/slup/react.svg"
+                                src="public/react.svg"
                                 alt="React SVG"
                             />
                         </div>
@@ -317,7 +330,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/tailwind.svg"
+                                src="public/tailwind.svg"
                                 alt="TailwindCSS SVG"
                             />
                         </div>
@@ -368,7 +381,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/redux.svg"
+                                src="public/redux.svg"
                                 alt="Redux SVG"
                             />
                         </div>
@@ -384,7 +397,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/react-query.svg"
+                                src="public/react-query.svg"
                                 alt="Tanstack SVG"
                             />
                         </div>
@@ -402,7 +415,7 @@
 
             <!-- Server-side -->
             <article
-                class="rounded-lg dark:bg-black shadow-md bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
+                class="lg:rounded-lg dark:bg-black shadow-md bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
             >
                 <p
                     class="text-sm text-center sm:text-left w-full font-semibold"
@@ -422,7 +435,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/nextjs.svg"
+                                src="public/nextjs.svg"
                                 alt="Next.JS SVG"
                             />
                         </div>
@@ -438,7 +451,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/nextjs-dark.svg"
+                                src="public/nextjs-dark.svg"
                                 alt="Next.JS SVG"
                             />
                         </div>
@@ -470,7 +483,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/slup/expressjs.svg"
+                                src="public/expressjs.svg"
                                 alt="Express.JS SVG"
                             />
                         </div>
@@ -486,7 +499,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/slup/expressjs-dark.svg"
+                                src="public/expressjs-dark.svg"
                                 alt="Express.JS SVG"
                             />
                         </div>
@@ -503,7 +516,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/slup/mongodb.svg"
+                                src="public/mongodb.svg"
                                 alt="MongoDB SVG"
                             />
                         </div>
@@ -519,7 +532,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/prisma.svg"
+                                src="public/prisma.svg"
                                 alt="Prisma ORM SVG"
                             />
                         </div>
@@ -535,7 +548,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/prisma-dark.svg"
+                                src="public/prisma-dark.svg"
                                 alt="Prisma ORM SVG"
                             />
                         </div>
@@ -568,7 +581,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/nextauth.webp"
+                                src="public/nextauth.webp"
                                 alt="NextAuth SVG"
                             />
                         </div>
@@ -584,7 +597,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/uhh/jwt.svg"
+                                src="public/jwt.svg"
                                 alt="JWT SVG"
                             />
                         </div>
@@ -600,7 +613,7 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/uhh/jwt-dark.svg"
+                                src="public/jwt-dark.svg"
                                 alt="JWT SVG"
                             />
                         </div>
@@ -616,18 +629,51 @@
                         >
                             <img
                                 class="w-10 aspect-square"
-                                src="public/garbgarb/stripe.svg"
+                                src="public/stripe.svg"
                                 alt="Stripe SVG"
                             />
                         </div>
                         <p class="text-center self-end">StripeJS</p>
+                    </div>
+                    <!-- Light mode Pusher -->
+                    <!-- lgiht mode JWT -->
+                    <div
+                        class="dark:hidden grid grid-rows-2-layout gap-2 group justify-items-center"
+                    >
+                        <div
+                            title="Pusher"
+                            class="group-hover:scale-125 transition-all w-10"
+                        >
+                            <img
+                                class="w-10 aspect-square"
+                                src="public/pusher.svg"
+                                alt="Pusher SVG"
+                            />
+                        </div>
+                        <p class="text-center self-end">Pusher</p>
+                    </div>
+                    <!-- Dark Mode Pusher -->
+                    <div
+                        class="hidden dark:grid grid-rows-2-layout gap-2 group justify-items-center"
+                    >
+                        <div
+                            title="Pusher"
+                            class="group-hover:scale-125 transition-all w-10"
+                        >
+                            <img
+                                class="w-10 aspect-square"
+                                src="public/pusher-dark.svg"
+                                alt="Pusher SVG"
+                            />
+                        </div>
+                        <p class="text-center self-end">Pusher</p>
                     </div>
                 </div>
             </article>
 
             <!-- Other -->
             <article
-                class="rounded-lg dark:bg-black shadow-md bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
+                class="lg:rounded-lg dark:bg-black shadow-md bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
             >
                 <p
                     class="text-sm text-center sm:text-left w-full font-semibold"
@@ -656,11 +702,69 @@
             class="w-full mx-auto max-w-screen-lg flex flex-col gap-8"
         >
             <h3
-                class="font-bold md:pl-4 dark:text-indigo-400 text-indigo-500 text-center md:text-left text-3xl"
+                class="font-bold md:pl-4 dark:text-indigo-400 text-indigo-600 text-center md:text-left text-3xl"
             >
                 My Projects
             </h3>
             <div class="w-full mb-10 space-y-6 px-4">
+                <article
+                    class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-white dark:border-black justify-items-center gap-8"
+                >
+                    <a
+                        href="https://yetanothermessagingapp.vercel.app"
+                        target="_blank"
+                        rel="no-referrer"
+                        class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
+                    >
+                        <img
+                            class="rounded-lg aspect-video w-full"
+                            src="public/yama.webp"
+                            alt="Yet another messaging app website preview"
+                        />
+                        <div
+                            class="hidden group-hover:grid absolute inset-0 rounded-lg text-3xl text-gray-200 uppercase font-bold bg-black/50 duration-300 transition-all group-hover:items-center group-hover:justify-center"
+                        >
+                            Visit
+                        </div>
+                    </a>
+                    <div
+                        class="flex text-sm flex-col gap-4 max-w-[500px] md:max-w-none"
+                    >
+                        <a
+                            href="https://yetanothermessagingapp.vercel.app"
+                            aria-label="GarbGarb"
+                            target="_blank"
+                            rel="no-referrer"
+                            class="text-2xl hover:underline focus:underline font-semibold text-center md:text-left"
+                        >
+                            Yet Another Messaging App
+                        </a>
+                        <p>
+                            Full-stack real-time messaging app that allows users
+                            to create their chatrooms or join existing ones,
+                            with real-time events being handled through
+                            WebSockets hosted by Pusher.
+                        </p>
+                        <div>
+                            <strong>Technologies used:</strong>
+                            <p>
+                                Next.js, Typescript, TailwindCSS, Pusher,
+                                Tanstack Query, Prisma, NextAuth
+                            </p>
+                        </div>
+                        <span>
+                            <a
+                                href="https://github.com/mrperrytpx/robina#readme"
+                                aria-label="Yet another messaging app repository github link"
+                                target="_blank"
+                                rel="no-referrer"
+                                class="underline dark:text-indigo-400 text-indigo-600 hover:font-semibold"
+                                >Read more on Github →</a
+                            >
+                        </span>
+                    </div>
+                </article>
+                <!--  -->
                 <article
                     class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-white dark:border-black justify-items-center gap-8"
                 >
@@ -671,8 +775,8 @@
                         class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
                     >
                         <img
-                            class="w-[min(100%,500px)] rounded-lg aspect-video"
-                            src="public/garbgarb.webp"
+                            class="rounded-lg aspect-video w-full"
+                            src="public/garb.webp"
                             alt="Garbgarb website preview"
                         />
                         <div
@@ -707,14 +811,16 @@
                                 NextAuth, Stripe
                             </p>
                         </div>
-                        <a
-                            href="https://github.com/mrperrytpx/garbgarb#readme"
-                            aria-label="GarbGarb github link"
-                            target="_blank"
-                            rel="no-referrer"
-                            class="underline dark:text-indigo-400 text-indigo-500 hover:font-semibold"
-                            >Read more on Github →</a
-                        >
+                        <span>
+                            <a
+                                href="https://github.com/mrperrytpx/garbgarb#readme"
+                                aria-label="GarbGarb repository github link"
+                                target="_blank"
+                                rel="no-referrer"
+                                class="underline dark:text-indigo-400 text-indigo-600 hover:font-semibold"
+                                >Read more on Github →</a
+                            >
+                        </span>
                     </div>
                 </article>
                 <!--  -->
@@ -728,7 +834,7 @@
                         class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
                     >
                         <img
-                            class="w-[min(100%,500px)] rounded-lg aspect-video"
+                            class="rounded-lg aspect-video w-full"
                             src="public/slup.webp"
                             alt="Summoner Lookup website preview"
                         />
@@ -766,91 +872,29 @@
                                 Express.JS, Mongoose, Redis, JWT
                             </p>
                         </div>
-                        <a
-                            href="https://github.com/mrperrytpx/SummonerLookup#readme"
-                            aria-label="Summoner Lookup github link"
-                            target="_blank"
-                            rel="no-referrer"
-                            class="underline dark:text-indigo-400 text-indigo-500 hover:font-semibold"
-                            >Read more on Github →</a
-                        >
+                        <span>
+                            <a
+                                href="https://github.com/mrperrytpx/SummonerLookup#readme"
+                                aria-label="Summoner Lookup repository github link"
+                                target="_blank"
+                                rel="no-referrer"
+                                class="underline dark:text-indigo-400 text-indigo-600 hover:font-semibold"
+                                >Read more on Github →</a
+                            >
+                        </span>
                     </div>
                 </article>
                 <!--  -->
-                <article
-                    class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-white dark:border-black justify-items-center gap-8"
-                >
-                    <a
-                        href="https://serenity-hearth.vercel.app/"
-                        target="_blank"
-                        rel="no-referrer"
-                        class="relative self-center md:self-start max-w-[500px] group transition-transform duration-300 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
-                    >
-                        <img
-                            class="w-[min(100%,500px)] rounded-lg aspect-video object-cover"
-                            src="public/serenity.webp"
-                            alt="Serenity Hearth website preview"
-                        />
-                        <div
-                            class="hidden group-hover:grid absolute inset-0 rounded-lg text-3xl text-gray-200 uppercase font-bold bg-black/50 duration-300 transition-all group-hover:items-center group-hover:justify-center"
-                        >
-                            Visit
-                        </div>
-                    </a>
-                    <div
-                        class="flex text-sm flex-col gap-4 max-w-[500px] md:max-w-none"
-                    >
-                        <a
-                            href="https://serenity-hearth.vercel.app/"
-                            aria-label="Serenity Hearth"
-                            target="_blank"
-                            rel="no-referrer"
-                            class="text-2xl hover:underline focus:underline font-semibold text-center md:text-left"
-                        >
-                            Serenity Hearth
-                        </a>
-                        <p>
-                            A simple audio streaming website that allows you to
-                            stream an audio of a purring cat next to a crackling
-                            fireplace. You can also see the current amount of
-                            people streaming the audio in real time via
-                            websockets. Inspired by
-                            <a
-                                href="https://rainymood.com/"
-                                aria-label="Rainymood"
-                                target="_blank"
-                                rel="no-referrer"
-                                class="underline dark:text-indigo-400 text-indigo-500 hover:font-semibold"
-                                >Rainymood</a
-                            >.
-                        </p>
-                        <div>
-                            <strong>Technologies used:</strong>
-                            <p>
-                                Next.js, Typescript, TailwindCSS, Express.JS,
-                                Socket.io
-                            </p>
-                        </div>
-                        <a
-                            href="https://github.com/mrperrytpx/soundmood#readme"
-                            aria-label="Serenity hearth github link"
-                            target="_blank"
-                            rel="no-referrer"
-                            class="underline dark:text-indigo-400 text-indigo-500 hover:font-semibold"
-                            >Read more on Github →</a
-                        >
-                    </div>
-                </article>
             </div>
             <!--  -->
         </section>
 
         <section
             id="contacts"
-            class="w-full max-w-screen-lg mx-auto flex flex-col p-4 gap-8 rounded-lg shadow-md bg-white dark:bg-black"
+            class="w-full max-w-screen-lg mx-auto flex flex-col p-4 gap-8 lg:rounded-lg shadow-md bg-white dark:bg-black"
         >
             <h3
-                class="font-bold dark:text-indigo-400 text-indigo-500 text-center md:text-left text-3xl"
+                class="font-bold dark:text-indigo-400 text-indigo-600 text-center md:text-left text-3xl"
             >
                 Contacts
             </h3>
@@ -865,10 +909,10 @@
                         href="https://www.github.com/mrperrytpx"
                         target="_blank"
                         rel="no-referrer"
-                        class="inline-block bg-white dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg aspect-square md:w-12 w-10"
+                        class="inline-block bg-white dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg md:w-12 w-10"
                     >
                         <img
-                            class="w-full"
+                            class="w-full aspect-square"
                             loading="eager"
                             src="public/github-dark.svg"
                             alt="Github SVG"
@@ -878,10 +922,10 @@
                         href="https://www.linkedin.com/in/tomislav-siprak"
                         target="_blank"
                         rel="no-referrer"
-                        class="inline-block bg-white dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
+                        class="inline-block bg-white dark:hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg w-10 md:w-12"
                     >
                         <img
-                            class="w-full"
+                            class="w-full aspect-square"
                             loading="eager"
                             src="public/linkedin-dark.svg"
                             alt="LinkedIn SVG"
@@ -905,7 +949,7 @@
                         href="https://www.linkedin.com/in/tomislav-siprak"
                         target="_blank"
                         rel="no-referrer"
-                        class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg w-10 aspect-square md:w-12"
+                        class="dark:inline-block hidden group hover:scale-125 p-0.5 transition-transform appearance-none rounded-lg w-10 md:w-12"
                     >
                         <img
                             class="w-10 aspect-square"
@@ -926,7 +970,7 @@
                             <label class="group font-semibold flex flex-col">
                                 Your name:
                                 <input
-                                    class="h-10 dark:bg-gray-200 bg-slate-50 focus:outline-indigo-500 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
+                                    class="h-10 dark:bg-gray-200 bg-slate-50 focus:outline-indigo-600 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
                                     required
                                     placeholder="Name*"
                                     type="text"
@@ -936,7 +980,7 @@
                             <label class="group font-semibold flex flex-col">
                                 Your email:
                                 <input
-                                    class="h-10 dark:bg-gray-200 bg-slate-50 focus:outline-indigo-500 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
+                                    class="h-10 dark:bg-gray-200 bg-slate-50 focus:outline-indigo-600 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
                                     required
                                     placeholder="Email*"
                                     type="email"
@@ -951,14 +995,14 @@
                             <textarea
                                 required
                                 placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                                class="h-32 dark:bg-gray-200 bg-slate-50 focus:outline-indigo-500 focus:bg-white text-sm shadow-sm rounded-lg text-black p-2 md:h-full w-full"
+                                class="h-32 dark:bg-gray-200 bg-slate-50 focus:outline-indigo-600 focus:bg-white text-sm shadow-sm rounded-lg text-black p-2 md:h-full w-full"
                                 name="message"
                             ></textarea>
                         </label>
                     </div>
                     <!-- your other form fields go here -->
                     <button
-                        class="p-2 text-black bg-white sm:max-w-[240px] self-start focus:text-white hover:text-white dark:border-indigo-400 border-indigo-500 border-2 focus:border-white hover:border-white dark:focus:bg-indigo-400 dark:hover:bg-indigo-400 hover:bg-indigo-500 focus:bg-indigo-500 shadow-sm md:self-end w-full rounded-lg font-semibold"
+                        class="p-2 text-black bg-white sm:max-w-[240px] self-start focus:text-white hover:text-white dark:border-indigo-400 border-indigo-600 border-2 focus:border-white hover:border-white dark:focus:bg-indigo-400 dark:hover:bg-indigo-400 hover:bg-indigo-600 focus:bg-indigo-600 shadow-sm md:self-end w-full rounded-lg font-semibold"
                         type="submit"
                     >
                         Send
@@ -972,7 +1016,7 @@
         >
             <a
                 href="#top"
-                class="mx-auto hover:underline dark:text-indigo-400 text-indigo-500 font-bold text-sm"
+                class="mx-auto hover:underline dark:text-indigo-400 text-indigo-600 font-bold text-sm"
                 >Back to top ↑</a
             >
         </div>
