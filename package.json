@@ -1,23 +1,23 @@
 {
-  "name": "pf",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mrperrytpx/pf.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mrperrytpx/pf/issues"
-  },
-  "homepage": "https://github.com/mrperrytpx/pf#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.3.2"
-  }
+    "name": "pf",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "style": "npx tailwindcss -i ./docs/index.css -o ./docs/output.css --watch --minify"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mrperrytpx/pf.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mrperrytpx/pf/issues"
+    },
+    "homepage": "https://github.com/mrperrytpx/pf#readme",
+    "devDependencies": {
+        "tailwindcss": "^3.3.2"
+    }
 }
