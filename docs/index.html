@@ -48,7 +48,7 @@
         >
             <!-- md: nav -->
             <nav
-                class="w-full flex items-center justify-between relative mx-auto max-w-screen-2xl px-4 2xl:px-0.5 h-full font-bold"
+                class="w-full flex items-center justify-between relative mx-auto max-w-responsive-screen-2xl px-4 h-full font-bold"
             >
                 <a
                     href="#top"
@@ -123,13 +123,11 @@
         <!--  -->
         <section
             id="top"
-            class="min-h-[max(82dvh,500px)] px-4 flex flex-col md:flex-row items-center justify-center gap-8 w-full"
+            class="p-4 min-h-[min(36rem,100dvh)] mt-20 flex flex-col md:flex-row items-center justify-center gap-8 w-full"
         >
-            <div
-                class="w-[min(100%,175px)] md:w-[min(100%,255px)] aspect-square"
-            >
+            <div class="w-48 md:w-64">
                 <img
-                    class="w-[min(100%,175px)] md:w-[min(100%,255px)] shadow-sm aspect-square rounded-full select-none"
+                    class="aspect-square select-none rounded-full"
                     loading="eager"
                     src="public/me.webp"
                     alt="Image of Tomislav looking out of the frame to the right. The picture is in black and white."
@@ -162,6 +160,7 @@
                             loading="eager"
                             src="public/github-purple.svg"
                             alt="Github SVG"
+                            title="Github"
                         />
                     </a>
                     <a
@@ -175,6 +174,7 @@
                             loading="eager"
                             src="public/linkedin-dark.svg"
                             alt="LinkedIn SVG"
+                            title="LinkedIn"
                         />
                     </a>
                     <a
@@ -186,6 +186,7 @@
                             loading="eager"
                             src="public/email-purple.svg"
                             alt="Email SVG"
+                            title="Email"
                         />
                     </a>
                     <a
@@ -199,9 +200,9 @@
                             loading="eager"
                             src="public/github-indigo.svg"
                             alt="Github SVG"
+                            title="Github"
                         />
                     </a>
-                    <!--  -->
                     <a
                         href="https://www.linkedin.com/in/tomislav-siprak"
                         target="_blank"
@@ -213,9 +214,9 @@
                             loading="eager"
                             src="public/linkedin.svg"
                             alt="LinkedIn SVG"
+                            title="LinkedIn"
                         />
                     </a>
-                    <!--  -->
                     <a
                         href="#contacts"
                         class="hidden dark:inline-block group hover:scale-110 transition-transform duration-75 bg-black rounded-full appearance-none w-10 md:w-12"
@@ -225,6 +226,7 @@
                             loading="eager"
                             src="public/email-indigo.svg"
                             alt="Email SVG"
+                            title="Email"
                         />
                     </a>
                 </div>
@@ -232,11 +234,11 @@
         </section>
 
         <div
-            class="lg:rounded-2xl p-4 shadow-md bg-white dark:bg-black w-full max-w-screen-2xl mx-auto space-y-8 mb-20"
+            class="lg:rounded-2xl p-4 shadow-md bg-white dark:bg-black w-full max-w-responsive-screen-2xl mx-auto space-y-8 mb-20"
         >
             <section
                 id="about"
-                class="w-full overflow-x-hidden mx-auto max-w-screen-lg my-8 flex flex-col space-y-8"
+                class="w-full overflow-x-hidden mx-auto max-w-responsive-screen-lg my-8 flex flex-col space-y-8"
             >
                 <h2
                     class="font-bold md:pl-4 text-center dark:text-indigo-400 text-indigo-600 md:text-left text-3xl"
@@ -244,14 +246,11 @@
                     About me
                 </h2>
                 <p class="md:text-lg transition-all duration-500">
-                    👋 Hi, I'm Tomislav, a self-taught web developer from
-                    Croatia. I currently specialize in React and Next.js. My
-                    skillset includes proficiency in Typescript, HTML, and CSS,
-                    along with hands-on experience using various front-end
-                    libraries such as Redux Toolkit, Tanstack Query/Table, and
-                    TailwindCSS, among others. I am familiar with some back-end
-                    technologies like Node.js, Express.js and Prisma ORM, and I
-                    have a strong understanding of REST APIs.
+                    👋 Hi, I'm Tomislav, a self-taught Web Developer from
+                    Croatia specializing in the React ecosystem. I'm proficient
+                    in Typescript, HTML, CSS and responsive web design and I am
+                    skilled in developing and integrating REST APIs to create
+                    smooth and user-friendly web experiences.
                 </p>
                 <p class="md:text-lg transition-all duration-500">
                     I am a self-motivated and detail-oriented developer who
@@ -264,7 +263,7 @@
         <!--  -->
         <section
             id="tech"
-            class="w-full mx-auto max-w-screen-lg flex flex-col gap-8"
+            class="w-full mx-auto max-w-responsive-screen-lg flex flex-col gap-8"
         >
             <h2
                 class="font-bold md:pl-4 dark:text-indigo-400 text-indigo-600 text-center md:text-left text-3xl"
@@ -275,130 +274,59 @@
             <article
                 class="lg:rounded-lg dark:bg-black shadow-md bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
             >
-                <p
-                    class="text-sm text-center md:text-left w-full font-semibold"
-                >
-                    Client-side technologies I have experience with:
-                </p>
+                <h3 class="text-center md:text-left w-full font-semibold">
+                    Languages I have experience with:
+                </h3>
                 <div
-                    class="text-xs flex gap-4 items-center font-medium justify-center md:justify-start flex-wrap w-full"
+                    class="text-sm flex gap-6 items-center font-medium justify-center md:justify-start flex-wrap w-full"
                 >
-                    <div
-                        class="grid grid-rows-2 gap-2 group justify-items-center"
+                    <figure
+                        class="grid grid-rows-oneRow gap-2 group justify-items-center"
                     >
-                        <div title="Javascript" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/javascript.svg"
-                                alt="Javascript SVG"
-                            />
-                        </div>
-                        <p class="text-center self-center">Javascript</p>
-                    </div>
+                        <img
+                            title="TypeScript"
+                            class="w-10 aspect-square select-none"
+                            src="public/typescript.svg"
+                            alt="TypeScript SVG"
+                        />
+                        <figcaption>TypeScript</figcaption>
+                    </figure>
 
-                    <div
-                        class="grid grid-rows-2 gap-2 group justify-items-center"
+                    <figure
+                        class="grid grid-rows-oneRow gap-2 group justify-items-center"
                     >
-                        <div title="Typescript" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/typescript.svg"
-                                alt="Typescript SVG"
-                            />
-                        </div>
-                        <p class="text-center self-center">Typescript</p>
-                    </div>
+                        <img
+                            title="JavaScript"
+                            class="w-10 aspect-square select-none"
+                            src="public/javascript.svg"
+                            alt="JavaScript SVG"
+                        />
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
 
-                    <div
-                        class="grid grid-rows-2 gap-2 group justify-items-center"
+                    <figure
+                        class="grid grid-rows-oneRow gap-2 group justify-items-center"
                     >
-                        <div title="React" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/react.svg"
-                                alt="React SVG"
-                            />
-                        </div>
-                        <p class="text-center self-center">React</p>
-                    </div>
+                        <img
+                            title="HTML"
+                            class="w-10 aspect-square select-none antialiased"
+                            src="public/html.svg"
+                            alt="HTML5 SVG"
+                        />
+                        <figcaption>HTML</figcaption>
+                    </figure>
 
-                    <div
-                        class="grid grid-rows-2 gap-2 group justify-items-center"
+                    <figure
+                        class="grid grid-rows-oneRow gap-2 group justify-items-center"
                     >
-                        <div title="TailwindCSS" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/tailwind.svg"
-                                alt="TailwindCSS SVG"
-                            />
-                        </div>
-                        <p class="text-center self-center">TailwindCSS</p>
-                    </div>
-
-                    <div
-                        class="grid grid-rows-2 gap-2 group justify-items-center"
-                    >
-                        <div title="styled-components" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/styled-components.webp"
-                                alt="styled-components WEBP"
-                            />
-                        </div>
-                        <div>
-                            <p class="text-center self-center">styled-</p>
-                            <p class="text-center self-center">components</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="grid grid-rows-2 gap-2 group justify-items-center"
-                    >
-                        <div
-                            title="SCSS"
-                            class="grid justify-items-end w-10 h-10"
-                        >
-                            <img
-                                class="w-10 self-end select-none aspect-square"
-                                src="public/scss.webp"
-                                alt="SCSS WEBP"
-                            />
-                        </div>
-                        <p class="text-center self-center">SCSS</p>
-                    </div>
-
-                    <div
-                        class="grid grid-rows-2 gap-2 group justify-items-center"
-                    >
-                        <div title="Redux Toolkit" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/redux.svg"
-                                alt="Redux SVG"
-                            />
-                        </div>
-                        <p class="text-center self-center">Redux Toolkit</p>
-                    </div>
-
-                    <div
-                        class="grid grid-rows-2 gap-2 group justify-items-center"
-                    >
-                        <div title="TanStack Query/Table" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/react-query.svg"
-                                alt="Tanstack SVG"
-                            />
-                        </div>
-                        <div class="self-center">
-                            <p class="text-center self-center">
-                                TanStack Query
-                            </p>
-                            <p class="text-center self-center">
-                                TanStack Table
-                            </p>
-                        </div>
-                    </div>
+                        <img
+                            title="CSS"
+                            class="w-10 aspect-square select-none"
+                            src="public/css.svg"
+                            alt="CSS SVG"
+                        />
+                        <figcaption>CSS</figcaption>
+                    </figure>
                 </div>
             </article>
 
@@ -406,197 +334,199 @@
             <article
                 class="lg:rounded-lg dark:bg-black shadow-md bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
             >
-                <p
-                    class="text-sm text-center md:text-left w-full font-semibold"
-                >
-                    Server-side technologies I have experience with:
-                </p>
+                <h3 class="text-center md:text-left w-full font-semibold">
+                    Technologies I have experience with:
+                </h3>
                 <div
-                    class="text-xs flex font-medium items-center justify-center md:justify-start gap-8 flex-wrap w-full"
+                    class="text-sm flex font-medium items-center justify-center md:justify-start gap-6 flex-wrap w-full"
                 >
                     <!-- light mode nextjs -->
-                    <div
-                        class="dark:hidden grid grid-rows-2-layout group gap-2 justify-items-center"
+                    <figure
+                        class="dark:hidden grid grid-rows-twoRows group gap-2 justify-items-center"
                     >
-                        <div title="Next.JS" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/nextjs.svg"
-                                alt="Next.JS SVG"
-                            />
-                        </div>
-                        <p class="text-center self-start">Next.JS</p>
-                    </div>
+                        <img
+                            title="Next.js"
+                            class="w-10 aspect-square select-none"
+                            src="public/nextjs.svg"
+                            alt="Next.js SVG"
+                        />
+                        <figcaption>Next.js</figcaption>
+                    </figure>
                     <!-- dark mode nextjs -->
-                    <div
-                        class="hidden dark:grid grid-rows-2-layout group gap-2 justify-items-center"
+                    <figure
+                        class="hidden dark:grid grid-rows-twoRows group gap-2 justify-items-center"
                     >
-                        <div title="Next.JS" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/nextjs-dark.svg"
-                                alt="Next.JS SVG"
-                            />
-                        </div>
-                        <p class="text-center self-start">Next.JS</p>
-                    </div>
-                    <!-- node.js -->
-                    <div
-                        class="grid grid-rows-2-layout group gap-2 justify-items-center"
+                        <img
+                            title="Next.js"
+                            class="w-10 aspect-square select-none"
+                            src="public/nextjs-dark.svg"
+                            alt="Next.js SVG"
+                        />
+                        <figcaption>Next.js</figcaption>
+                    </figure>
+
+                    <figure
+                        class="grid grid-rows-twoRows gap-2 group justify-items-center"
                     >
-                        <div title="Node.JS" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/nodejs.svg"
-                                alt="Node.JS SVG"
-                            />
-                        </div>
-                        <p class="text-center self-start">Node.js</p>
-                    </div>
+                        <img
+                            title="React"
+                            class="w-10 aspect-square select-none"
+                            src="public/react.svg"
+                            alt="React SVG"
+                        />
+                        <figcaption>React</figcaption>
+                    </figure>
+
+                    <figure
+                        class="grid grid-rows-twoRows gap-2 group justify-items-center"
+                    >
+                        <img
+                            title="TailwindCSS"
+                            class="w-10 aspect-square select-none"
+                            src="public/tailwind.svg"
+                            alt="TailwindCSS SVG"
+                        />
+                        <figcaption>TailwindCSS</figcaption>
+                    </figure>
+
+                    <figure
+                        class="grid grid-rows-twoRows gap-2 group justify-items-center"
+                    >
+                        <img
+                            title="styled-components"
+                            class="w-10 aspect-square select-none"
+                            src="public/styled-components.webp"
+                            alt="styled-components WEBP"
+                        />
+                        <figcaption>
+                            <span class="text-center block">styled-</span>
+                            <span class="text-center block">components</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure
+                        class="grid grid-rows-twoRows gap-2 group justify-items-center"
+                    >
+                        <img
+                            title="SCSS"
+                            class="w-10 aspect-square select-none"
+                            src="public/scss.webp"
+                            alt="SCSS WEBP"
+                        />
+                        <figcaption>SCSS</figcaption>
+                    </figure>
+
+                    <figure
+                        class="grid grid-rows-twoRows gap-2 group justify-items-center"
+                    >
+                        <img
+                            title="TanStack Query"
+                            class="w-10 aspect-square select-none"
+                            src="public/react-query.svg"
+                            alt="Tanstack SVG"
+                        />
+                        <figcaption>
+                            <span class="text-center block">TanStack</span>
+                            <span class="text-center block">Query</span>
+                        </figcaption>
+                    </figure>
+
                     <!-- light mode expressjs -->
-                    <div
-                        class="dark:hidden grid grid-rows-2-layout group gap-2 justify-items-center"
+                    <figure
+                        class="dark:hidden grid grid-rows-twoRows group gap-2 justify-items-center"
                     >
-                        <div title="Express.js" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/expressjs.svg"
-                                alt="Express.JS SVG"
-                            />
-                        </div>
-                        <p class="text-center self-start">Express.js</p>
-                    </div>
+                        <img
+                            title="Express.js"
+                            class="w-10 aspect-square select-none"
+                            src="public/expressjs.svg"
+                            alt="Express.JS SVG"
+                        />
+                        <figcaption>Express.js</figcaption>
+                    </figure>
                     <!-- dark mode expressjs -->
-                    <div
-                        class="hidden dark:grid grid-rows-2-layout group gap-2 justify-items-center"
+                    <figure
+                        class="hidden dark:grid grid-rows-twoRows group gap-2 justify-items-center"
                     >
-                        <div title="Express.js" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/expressjs-dark.svg"
-                                alt="Express.JS SVG"
-                            />
-                        </div>
-                        <p class="text-center self-start">Express.js</p>
-                    </div>
+                        <img
+                            title="Express.js"
+                            class="w-10 aspect-square select-none"
+                            src="public/expressjs-dark.svg"
+                            alt="Express.JS SVG"
+                        />
+                        <figcaption>Express.js</figcaption>
+                    </figure>
+
+                    <figure
+                        class="grid grid-rows-twoRows gap-2 group justify-items-center"
+                    >
+                        <img
+                            title="NextAuth"
+                            class="w-10 aspect-square select-none"
+                            src="public/nextauth.webp"
+                            alt="NextAuth SVG"
+                        />
+                        <figcaption>NextAuth</figcaption>
+                    </figure>
                     <!-- light mode prisma -->
-                    <div
-                        class="dark:hidden grid grid-rows-2-layout group gap-2 justify-items-center"
+                    <figure
+                        class="dark:hidden grid grid-rows-twoRows group gap-2 justify-items-center"
                     >
-                        <div title="Prisma ORM" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/prisma.svg"
-                                alt="Prisma ORM SVG"
-                            />
-                        </div>
-                        <p class="text-center self-start">Prisma ORM</p>
-                    </div>
+                        <img
+                            title="Prisma ORM"
+                            class="w-10 aspect-square select-none"
+                            src="public/prisma.svg"
+                            alt="Prisma ORM SVG"
+                        />
+                        <figcaption>Prisma ORM</figcaption>
+                    </figure>
                     <!-- dark mode prisma -->
-                    <div
-                        class="hidden dark:grid grid-rows-2-layout group gap-2 justify-items-center"
+                    <figure
+                        class="hidden dark:grid grid-rows-twoRows group gap-2 justify-items-center"
                     >
-                        <div title="Prisma ORM" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/prisma-dark.svg"
-                                alt="Prisma ORM SVG"
-                            />
-                        </div>
-                        <p class="text-center self-start">Prisma ORM</p>
-                    </div>
-                    <!-- redis -->
+                        <img
+                            title="Prisma ORM"
+                            class="w-10 aspect-square select-none"
+                            src="public/prisma-dark.svg"
+                            alt="Prisma ORM SVG"
+                        />
+                        <figcaption>Prisma ORM</figcaption>
+                    </figure>
 
-                    <div
-                        class="grid grid-rows-2-layout group gap-2 justify-items-center"
+                    <figure
+                        class="grid grid-rows-twoRows gap-2 group justify-items-center"
                     >
-                        <div title="Redis" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/redis.svg"
-                                alt="Redis SVG"
-                            />
-                        </div>
-                        <p class="text-center self-start">Redis</p>
-                    </div>
-
-                    <div
-                        class="grid grid-rows-2-layout gap-2 group justify-items-center"
-                    >
-                        <div title="NextAuth" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/nextauth.webp"
-                                alt="NextAuth SVG"
-                            />
-                        </div>
-                        <p class="text-center self-end">NextAuth</p>
-                    </div>
-                    <!-- light mode JWT -->
-                    <div
-                        class="dark:hidden grid grid-rows-2-layout gap-2 group justify-items-center"
-                    >
-                        <div title="JWT" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/jwt.svg"
-                                alt="JWT SVG"
-                            />
-                        </div>
-                        <p class="text-center self-end">JWT</p>
-                    </div>
-                    <!-- dark mode JWD -->
-                    <div
-                        class="hidden dark:grid grid-rows-2-layout gap-2 group justify-items-center"
-                    >
-                        <div title="JWT" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/jwt-dark.svg"
-                                alt="JWT SVG"
-                            />
-                        </div>
-                        <p class="text-center self-end">JWT</p>
-                    </div>
-
-                    <div
-                        class="grid grid-rows-2-layout gap-2 group justify-items-center"
-                    >
-                        <div title="Stripe JS" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/stripe.svg"
-                                alt="Stripe SVG"
-                            />
-                        </div>
-                        <p class="text-center self-end">StripeJS</p>
-                    </div>
+                        <img
+                            title="StripeJS"
+                            class="w-10 aspect-square select-none"
+                            src="public/stripe.svg"
+                            alt="Stripe SVG"
+                        />
+                        <figcaption>StripeJS</figcaption>
+                    </figure>
                     <!-- Light mode Pusher -->
-                    <div
-                        class="dark:hidden grid grid-rows-2-layout gap-2 group justify-items-center"
+                    <figure
+                        class="dark:hidden grid grid-rows-twoRows gap-2 group justify-items-center"
                     >
-                        <div title="Pusher" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/pusher.svg"
-                                alt="Pusher SVG"
-                            />
-                        </div>
-                        <p class="text-center self-end">Pusher</p>
-                    </div>
+                        <img
+                            title="Pusher"
+                            class="w-10 aspect-square select-none"
+                            src="public/pusher.svg"
+                            alt="Pusher SVG"
+                        />
+                        <figcaption>Pusher</figcaption>
+                    </figure>
                     <!-- Dark Mode Pusher -->
-                    <div
-                        class="hidden dark:grid grid-rows-2-layout gap-2 group justify-items-center"
+                    <figure
+                        class="hidden dark:grid grid-rows-twoRows gap-2 group justify-items-center"
                     >
-                        <div title="Pusher" class="w-10">
-                            <img
-                                class="w-10 aspect-square select-none"
-                                src="public/pusher-dark.svg"
-                                alt="Pusher SVG"
-                            />
-                        </div>
-                        <p class="text-center self-end">Pusher</p>
-                    </div>
+                        <img
+                            title="Pusher"
+                            class="w-10 aspect-square select-none"
+                            src="public/pusher-dark.svg"
+                            alt="Pusher SVG"
+                        />
+                        <figcaption>Pusher</figcaption>
+                    </figure>
                 </div>
             </article>
 
@@ -604,31 +534,55 @@
             <article
                 class="lg:rounded-lg dark:bg-black shadow-md bg-white p-4 w-full flex flex-col gap-4 items-start justify-center"
             >
-                <p
-                    class="text-sm text-center md:text-left w-full font-semibold"
-                >
+                <h3 class="text-center md:text-left w-full font-semibold">
                     Other tooling:
-                </p>
+                </h3>
                 <div
-                    class="text-sm flex font-medium items-center justify-center md:justify-start gap-2 flex-wrap w-full"
+                    class="text-sm flex chi font-medium items-center justify-center md:justify-start gap-2 flex-wrap w-full"
                 >
-                    <div>git+Github |</div>
-                    <div>Railway |</div>
-                    <div>Planetscale |</div>
-                    <div>MongoDB Atlas |</div>
-                    <div>Swagger |</div>
-                    <div>Figma |</div>
-                    <div>Prettier |</div>
-                    <div>Postman |</div>
-                    <div>Vercel |</div>
-                    <div>Stripe</div>
+                    <span
+                        class="last-of-type:after:content-none after:content-['|'] after:pl-2"
+                        >git+Github</span
+                    >
+                    <span
+                        class="last-of-type:after:content-none after:content-['|'] after:pl-2"
+                        >Railway</span
+                    >
+                    <span
+                        class="last-of-type:after:content-none after:content-['|'] after:pl-2"
+                        >Planetscale</span
+                    >
+                    <span
+                        class="last-of-type:after:content-none after:content-['|'] after:pl-2"
+                        >Swagger</span
+                    >
+                    <span
+                        class="last-of-type:after:content-none after:content-['|'] after:pl-2"
+                        >Figma</span
+                    >
+                    <span
+                        class="last-of-type:after:content-none after:content-['|'] after:pl-2"
+                        >Postman</span
+                    >
+                    <span
+                        class="last-of-type:after:content-none after:content-['|'] after:pl-2"
+                        >Vercel</span
+                    >
+                    <span
+                        class="last-of-type:after:content-none after:content-['|'] after:pl-2"
+                        >Stripe</span
+                    >
+                    <span
+                        class="last-of-type:after:content-none after:content-['|'] after:pl-2"
+                        >Pusher</span
+                    >
                 </div>
             </article>
         </section>
 
         <section
             id="projects"
-            class="w-full mx-auto max-w-screen-lg flex flex-col gap-8"
+            class="w-full mx-auto max-w-responsive-screen-lg flex flex-col gap-8"
         >
             <h2
                 class="font-bold md:pl-4 dark:text-indigo-400 text-indigo-600 text-center md:text-left text-3xl"
@@ -637,13 +591,13 @@
             </h2>
             <div class="w-full mb-10 space-y-6 px-4">
                 <article
-                    class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-white dark:border-black justify-items-center gap-8"
+                    class="grid md:grid-cols-[minmax(0,21.875rem),1fr] pt-4 pb-8 border-b-2 border-white dark:border-black justify-items-center gap-8"
                 >
                     <a
                         href="https://yetanothermessagingapp.vercel.app"
                         target="_blank"
                         rel="no-referrer"
-                        class="relative self-center md:self-start max-w-[500px] group transition-transform duration-75 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
+                        class="relative md:self-start max-w-[31.25rem] group transition-transform duration-75 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
                     >
                         <img
                             class="rounded-lg aspect-video w-full select-none"
@@ -657,7 +611,7 @@
                         </div>
                     </a>
                     <div
-                        class="flex text-sm flex-col gap-4 max-w-[500px] md:max-w-none"
+                        class="flex flex-col gap-4 max-w-[31.25rem] md:max-w-none"
                     >
                         <a
                             href="https://yetanothermessagingapp.vercel.app"
@@ -670,14 +624,14 @@
                         </a>
                         <p>
                             Full-stack real-time messaging web app that allows
-                            users to create their chatrooms or join existing
+                            users to create their own chatrooms or join existing
                             ones, with real-time events being handled through
                             WebSockets hosted by Pusher.
                         </p>
                         <div>
                             <strong>Technologies used:</strong>
                             <p>
-                                Next.js, Typescript, TailwindCSS, Pusher,
+                                Next.js, TypeScript, TailwindCSS, Pusher,
                                 Tanstack Query, Prisma, NextAuth
                             </p>
                         </div>
@@ -695,13 +649,13 @@
                 </article>
                 <!--  -->
                 <article
-                    class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-white dark:border-black justify-items-center gap-8"
+                    class="grid md:grid-cols-[minmax(0,21.875rem),1fr] pt-4 pb-8 border-b-2 border-white dark:border-black justify-items-center gap-8"
                 >
                     <a
                         href="https://garbgarb.vercel.app"
                         target="_blank"
                         rel="no-referrer"
-                        class="relative self-center md:self-start max-w-[500px] group transition-transform duration-75 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
+                        class="relative md:self-start max-w-[31.25rem] group transition-transform duration-75 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
                     >
                         <img
                             class="rounded-lg aspect-video w-full select-none"
@@ -715,7 +669,7 @@
                         </div>
                     </a>
                     <div
-                        class="flex text-sm flex-col gap-4 max-w-[500px] md:max-w-none"
+                        class="flex flex-col gap-4 max-w-[31.25rem] md:max-w-none"
                     >
                         <a
                             href="https://garbgarb.vercel.app/"
@@ -735,7 +689,7 @@
                         <div>
                             <strong>Technologies used:</strong>
                             <p>
-                                Next.js, Typescript, TailwindCSS, Redux Toolkit,
+                                Next.js, TypeScript, TailwindCSS, Redux Toolkit,
                                 Tanstack Query & Table, Prisma, Planetscale,
                                 NextAuth, Stripe
                             </p>
@@ -754,13 +708,13 @@
                 </article>
                 <!--  -->
                 <article
-                    class="grid md:grid-cols-[minmax(0,350px),1fr] pt-4 pb-8 border-b-2 border-white dark:border-black justify-items-center gap-8"
+                    class="grid md:grid-cols-[minmax(0,21.875rem),1fr] pt-4 pb-8 border-b-2 border-white dark:border-black justify-items-center gap-8"
                 >
                     <a
                         href="https://summoner-lookup.vercel.app/"
                         target="_blank"
                         rel="no-referrer"
-                        class="relative self-center md:self-start max-w-[500px] group transition-transform duration-75 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
+                        class="relative md:self-start max-w-[31.25rem] group transition-transform duration-75 appearance-none hover:scale-105 dark:outline-indigo-400/50 dark:outline dark:outline-1 dark:hover:outline-2 dark:hover:outline-slate-500 rounded-lg"
                     >
                         <img
                             class="rounded-lg aspect-video w-full select-none"
@@ -774,7 +728,7 @@
                         </div>
                     </a>
                     <div
-                        class="flex text-sm flex-col gap-4 max-w-[500px] md:max-w-none"
+                        class="flex flex-col gap-4 max-w-[31.25rem] md:max-w-none"
                     >
                         <a
                             href="https://summoner-lookup.vercel.app/"
@@ -796,9 +750,9 @@
                         <div>
                             <strong>Technologies used:</strong>
                             <p>
-                                React, Javascript, Styled-components,
-                                React-router, Tanstack Query & Table,
-                                Express.JS, Mongoose, Redis, JWT
+                                React, JavaScript, styled-components, React
+                                Router, Tanstack Query & Table, Express.JS,
+                                Mongoose, Redis, JWT
                             </p>
                         </div>
                         <span class="text-center md:text-left">
@@ -820,14 +774,14 @@
 
         <section
             id="contacts"
-            class="w-full max-w-screen-lg mx-auto flex flex-col p-4 gap-8 lg:rounded-lg shadow-md bg-white dark:bg-black"
+            class="w-full max-w-responsive-screen-lg mx-auto flex flex-col p-4 gap-8 lg:rounded-lg shadow-md bg-white dark:bg-black"
         >
             <h2
                 class="font-bold dark:text-indigo-400 text-indigo-600 text-center md:text-left text-3xl"
             >
                 Contacts
             </h2>
-            <div class="flex flex-col gap-10 h-full max-w-screen-lg">
+            <div class="flex flex-col gap-10 h-full max-w-responsive-screen-lg">
                 <p class="text-center sm:text-start">
                     Please feel free to contact me at any time using any of the
                     methods below and I will respond to you as soon as possible.
@@ -845,6 +799,7 @@
                             loading="eager"
                             src="public/github-dark.svg"
                             alt="Github SVG"
+                            title="Github"
                         />
                     </a>
                     <a
@@ -858,6 +813,7 @@
                             loading="eager"
                             src="public/linkedin-dark.svg"
                             alt="LinkedIn SVG"
+                            title="LinkedIn"
                         />
                     </a>
 
@@ -872,6 +828,7 @@
                             loading="eager"
                             src="public/github.svg"
                             alt="Github SVG"
+                            title="Github"
                         />
                     </a>
                     <a
@@ -885,6 +842,7 @@
                             loading="eager"
                             src="public/linkedin.svg"
                             alt="LinkedIn SVG"
+                            title="LinkedIn"
                         />
                     </a>
                 </div>
@@ -899,7 +857,7 @@
                             <label class="group font-semibold flex flex-col">
                                 Your name:
                                 <input
-                                    class="h-10 select-none dark:bg-gray-200 bg-slate-50 focus:outline-indigo-600 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
+                                    class="h-10 select-none dark:bg-gray-200 border-2 hover:border-indigo-600 dark:hover:border-indigo-400 bg-slate-50 focus:outline-indigo-600 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
                                     required
                                     placeholder="Name*"
                                     type="text"
@@ -909,7 +867,7 @@
                             <label class="group font-semibold flex flex-col">
                                 Your email:
                                 <input
-                                    class="h-10 select-none dark:bg-gray-200 bg-slate-50 focus:outline-indigo-600 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
+                                    class="h-10 select-none dark:bg-gray-200 border-2 hover:border-indigo-600 dark:hover:border-indigo-400 bg-slate-50 focus:outline-indigo-600 focus:bg-white text-sm px-2 shadow-sm text-black rounded-lg w-full"
                                     required
                                     placeholder="Email*"
                                     type="email"
@@ -924,14 +882,14 @@
                             <textarea
                                 required
                                 placeholder="Hello! I would really like to work with you! Let's chat whenever you're available."
-                                class="h-32 select-none dark:bg-gray-200 bg-slate-50 focus:outline-indigo-600 focus:bg-white text-sm shadow-sm rounded-lg text-black p-2 md:h-full w-full"
+                                class="h-32 select-none border-2 hover:border-indigo-600 dark:hover:border-indigo-400 bg-slate-50 focus:outline-indigo-600 focus:bg-white text-sm shadow-sm rounded-lg text-black p-2 md:h-full w-full"
                                 name="message"
                             ></textarea>
                         </label>
                     </div>
                     <!-- your other form fields go here -->
                     <button
-                        class="p-2 select-none text-black bg-white sm:max-w-[240px] self-start focus:text-white hover:text-white dark:border-indigo-400 border-indigo-600 border-2 focus:border-white hover:border-white dark:focus:bg-indigo-400 dark:hover:bg-indigo-400 hover:bg-indigo-600 focus:bg-indigo-600 shadow-sm md:self-end w-full rounded-lg font-semibold"
+                        class="p-2 select-none text-black bg-slate-50 sm:max-w-[15rem] self-end focus:text-white hover:text-white dark:border-indigo-400 border-2 focus:border-indigo-600 hover:border-indigo-600 dark:hover:border-indigo-400 dark:focus:bg-indigo-400 dark:hover:bg-indigo-400 hover:bg-indigo-600 focus:bg-indigo-600 shadow-sm w-full rounded-lg font-semibold"
                         type="submit"
                     >
                         Send
@@ -941,7 +899,7 @@
         </section>
 
         <div
-            class="w-full max-w-screen-lg mx-auto flex justify-center px-4 py-8"
+            class="w-full max-w-responsive-screen-lg mx-auto flex justify-center px-4 py-8"
         >
             <a
                 href="#top"
